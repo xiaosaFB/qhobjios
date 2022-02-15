@@ -1,0 +1,97 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom" ,// 隐藏系统导航栏
+				"navigationBarTextStyle": "white" // 状态栏字体为白色，只能为 white-白色，black-黑色 二选一
+			}
+		},
+		{
+			"path": "pages/FirstView/firstview",
+			"style": {
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/SecView/secview"
+		},
+		{
+			"path": "pages/ThrView/fhrview",
+			"style": { "navigationBarTitleText": "更多资讯"}
+		},
+		{
+			"path": "pages/MineView/mineview"
+		},
+		{
+			"path": "pages/MineView/selfzixuan",
+			"style": { "navigationBarTitleText": "我的自选"}
+		},
+		{
+			"path": "pages/SecView/lineDetail",
+			"style": { "navigationBarTitleText": "行情详情"}
+		},
+		{
+			"path": "pages/ThrView/hotnewsdetail",
+			"style": { "navigationBarTitleText": "资讯详情"}
+		},
+		
+		{
+			"path": "pages/ThrView/search",
+			"style": { "navigationBarTitleText": ""}
+		},
+		
+		{
+			"path": "pages/ThrView/message",
+			"style": { "navigationBarTitleText": "消息提醒"}
+		},
+		
+		{
+			"path": "pages/login/login",
+			"style": { "navigationBarTitleText": "", "navigationBarBackgroundColor":"#FFFFFF" }
+		},
+		{
+			"path": "pages/login/reg",
+			"style": { "navigationBarTitleText": "","navigationBarBackgroundColor":"#FFFFFF"}
+		},
+		{
+			"path": "pages/login/forget",
+			"style": { "navigationBarTitleText": "忘记密码","navigationBarBackgroundColor":"#FFFFFF"}
+		},
+		{
+			"path": "pages/login/agreement",
+			"style": { "navigationBarTitleText": "用户协议" }
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	// 原生的导航
+		"tabBar": {
+			// 需要时HexColor，设置成red 无法识别，下方颜色设置同理
+			// "color":"#000",
+			// "backerStyle":"white",
+			// "selectedColor":"#555",
+			// "backgroundColor": "#e6e6e6",
+			// "list": [
+			// 	{
+			// 		"pagePath": "pages/FirstView/firstview"
+			// 	},
+			// 	{
+			// 		"pagePath": "pages/SecView/secview"
+			// 	},
+			// 	{
+			// 		"pagePath": "pages/ThrView/fhrview"
+			// 	},
+			// 	{
+			// 		"pagePath": "pages/MineView/mineview"
+			// 	}
+				
+			// ]
+		}
+}
