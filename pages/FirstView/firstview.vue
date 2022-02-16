@@ -12,20 +12,15 @@ export default {
 	data() {
 		return {
 			indicator: true,
-			list3: [
-				'../../static/11111.png',
-				'../../static/22222.png',
-				'https://img1.baidu.com/it/u=2643548377,3443601659&fm=253&fmt=auto&app=138&f=JPEG?w=550&h=342.png',
-			],
 			filterList: false,
 			keyword: '',
 			loginState: uni.getStorageSync('login_key'),
 			curNow: 0,
 			newsListdatas: newsList,
-			newsListData: newsList.slice(0, 5),
-			indexList: ListHQ.slice(3, 11),
-			topthrdata: TOPTHDATA,
-			text1: '粳米期货一周岁：产业多策略积极参与套保粳米期货一周岁：产业多策略积极参与套保',
+			newsListData: newsList.slice(0, 5), //资讯data
+			indexList: ListHQ.slice(3, 11), // 期货data
+			topthrdata: TOPTHDATA, // 热门期货data
+			text1: '粳米期货一周岁：产业多策略积极参与套保粳米期货一周岁：产业多策略积极参与套保', //通知
 			bannerList:[
 				{ id:1, imgs:'https://img2.baidu.com/it/u=1484456337,1126487471&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=309' },
 				{ id:2, imgs:'https://img0.baidu.com/it/u=3284388619,708735942&fm=253&fmt=auto&app=120&f=JPEG?w=550&h=342' }

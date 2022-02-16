@@ -14,7 +14,7 @@
 					<view class="meOverBg" @click="selfzixuan">
 						<view class="businessList">
 							<view class="businessListTxt">我的关注</view>
-							<view class="businessListYou"><image src="../../static/icon/you.png"></image></view>
+							<view class="businessListYou"><image src="../../static/you.png"></image></view>
 						</view>
 						 
 					</view>
@@ -22,11 +22,11 @@
 					<view class="meOverBg" v-if="loginState == 1">
 						<view class="businessList" @click="zxOut">
 							<view class="businessListTxt"></image>立即注销</view>
-							<view class="businessListYou"><image src="../../static/icon/you.png"></image></view>
+							<view class="businessListYou"><image src="../../static/you.png"></image></view>
 						</view>
 						<view class="businessList" @click="loginOut">
 							<view class="businessListTxt">退出登录</view>
-							<view class="businessListYou"><image src="../../static/icon/you.png"></image></view>
+							<view class="businessListYou"><image src="../../static/you.png"></image></view>
 						</view>
 					</view>
 					<!--其他-->
@@ -43,7 +43,7 @@
 	export default{
 		data(){
 			return{
-				avatarUrl:'../../static/icon/avatar.png',//头像
+				avatarUrl:'../../static/avatarUrl.png',//头像
 				nickName:'点击登录', 
 				loginState: uni.getStorageSync('login_key'),
 				showmodel: false,
@@ -117,7 +117,6 @@
 </script>
 
 <style scoped>
-	page{ background: #D0E3FE; }
 	.meMain{ width: 100%;position: relative; height: 100vh;background-color: #CE161A;}
 	.meMain>image{ position: fixed;width: 100%;height: 50vh;display: block; bottom: 88upx;}
 	.meMainBox{ width: 92%;margin: 0 auto; }

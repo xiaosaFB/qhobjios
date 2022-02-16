@@ -1,7 +1,7 @@
 <template>
 	<view class="status_bar">
 		<view class="content" v-if="showmycontent">
-			<u-navbar bgColor="#D2E3FD" :titleStyle="{color: '#000'}" v-if="tabactiveindex!=0&&tabactiveindex!=1" :title="listnavbartitle[tabactiveindex]" :placeholder="true" leftIcon="" :border="true"></u-navbar>
+			<u-navbar bgColor="#FFFFFF" :titleStyle="{color: '#000'}" :title="listnavbartitle[tabactiveindex]" :placeholder="true" leftIcon="" :border="true"></u-navbar>
 			<view class="u-page">
 				<first-view v-if="tabactiveindex==0"></first-view> 
 				<sec-view v-if="tabactiveindex==1"></sec-view>
@@ -11,14 +11,14 @@
 			<u-tabbar
 				:value="tabactiveindex"
 				@change="change1"
-				activeColor="#E69C6d" 
-				inactiveColor="#e5636e"
+				activeColor="#437AFB" 
+				inactiveColor="#D3DCED"
 				:fixed="true"
 				:placeholder="true"
 				:border="true"
 				:safeAreaInsetBottom="true"
 			>
-				<u-tabbar-item style="background-color: #D2E3FD;" :text="listnavbartitle[0]" @click="click1" >
+				<u-tabbar-item style="background-color: #FFFFFF;" :text="listnavbartitle[0]" @click="click1" >
 					<image
 						class="u-page__item__slot-icon"
 						slot="active-icon"
@@ -30,7 +30,7 @@
 						src="/static/xin1.png"
 					></image>
 				</u-tabbar-item>
-				<u-tabbar-item style="background-color: #D2E3FD;" :text="listnavbartitle[1]" @click="click1" >
+				<u-tabbar-item style="background-color: #FFFFFF;" :text="listnavbartitle[1]" @click="click1" >
 					<image
 						class="u-page__item__slot-icon"
 						slot="active-icon"
@@ -42,7 +42,7 @@
 						src="/static/nian1.png"
 					></image>
 				</u-tabbar-item>
-				<u-tabbar-item style="background-color: #D2E3FD;" :text="listnavbartitle[2]" @click="click1" >
+				<u-tabbar-item style="background-color: #FFFFFF;" :text="listnavbartitle[2]" @click="click1" >
 					<image
 						class="u-page__item__slot-icon"
 						slot="active-icon"
@@ -54,7 +54,7 @@
 						src="/static/kuai1.png"
 					></image>
 				</u-tabbar-item>
-				<u-tabbar-item style="background-color: #D2E3FD;" :text="listnavbartitle[3]" @click="click1" >
+				<u-tabbar-item style="background-color: #FFFFFF;" :text="listnavbartitle[3]" @click="click1" >
 					<image
 						class="u-page__item__slot-icon"
 						slot="active-icon"
@@ -182,7 +182,6 @@
 .status_bar {
 	height: var(--status-bar-height);
 	width: 100%;
-	// padding: 0 20px 0 20px;
 }
 .u-page__item__slot-icon {
 	width: 25px;
@@ -192,9 +191,6 @@
 	 margin-top: 30px;
 	  display: flex;
 	  justify-content: center;
-	  // align-items: center;
-	  // text-align: center;
-	  // background-color: red;
 	  color: black;
   }
 </style>
