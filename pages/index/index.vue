@@ -1,70 +1,32 @@
 <template>
 	<view class="status_bar">
 		<view class="content" v-if="showmycontent">
-			<u-navbar v-show="showHead" bgColor="#FFFFFF" :titleStyle="{color: '#000'}" :title="listnavbartitle[tabactiveindex]" :placeholder="true" leftIcon="" :border="true"></u-navbar>
+			<u-navbar v-show="showHead" bgColor="#FFFFFF" :titleStyle="{color: '#000'}"
+				:title="listnavbartitle[tabactiveindex]" :placeholder="true" leftIcon="" :border="true"></u-navbar>
 			<view class="u-page">
-				<first-view v-if="tabactiveindex==0"></first-view> 
+				<div class="mainBackground-DS-EntryPoint1-1"></div>
+				<first-view v-if="tabactiveindex==0"></first-view>
 				<sec-view v-if="tabactiveindex==1"></sec-view>
 				<thr-view v-if="tabactiveindex==2"></thr-view>
 				<mine-view v-if="tabactiveindex==3"></mine-view>
 			</view>
-			<u-tabbar
-				:value="tabactiveindex"
-				@change="change1"
-				activeColor="#437AFB" 
-				inactiveColor="#D3DCED"
-				:fixed="true"
-				:placeholder="true"
-				:border="true"
-				:safeAreaInsetBottom="true"
-			>
-				<u-tabbar-item style="background-color: #FFFFFF;" :text="listnavbartitle[0]" @click="click1" >
-					<image
-						class="u-page__item__slot-icon"
-						slot="active-icon"
-						src="/static/xin0.png"
-					></image>
-					<image
-						class="u-page__item__slot-icon"
-						slot="inactive-icon"
-						src="/static/xin1.png"
-					></image>
+			<u-tabbar :value="tabactiveindex" @change="change1" activeColor="#437AFB" inactiveColor="#D3DCED"
+				:fixed="true" :placeholder="true" :border="true" :safeAreaInsetBottom="true">
+				<u-tabbar-item style="background-color: #FFFFFF;" :text="listnavbartitle[0]" @click="click1">
+					<image class="u-page__item__slot-icon" slot="active-icon" src="/static/xin0.png"></image>
+					<image class="u-page__item__slot-icon" slot="inactive-icon" src="/static/xin1.png"></image>
 				</u-tabbar-item>
-				<u-tabbar-item style="background-color: #FFFFFF;" :text="listnavbartitle[1]" @click="click1" >
-					<image
-						class="u-page__item__slot-icon"
-						slot="active-icon"
-						src="/static/nian0.png"
-					></image>
-					<image
-						class="u-page__item__slot-icon"
-						slot="inactive-icon"
-						src="/static/nian1.png"
-					></image>
+				<u-tabbar-item style="background-color: #FFFFFF;" :text="listnavbartitle[1]" @click="click1">
+					<image class="u-page__item__slot-icon" slot="active-icon" src="/static/nian0.png"></image>
+					<image class="u-page__item__slot-icon" slot="inactive-icon" src="/static/nian1.png"></image>
 				</u-tabbar-item>
-				<u-tabbar-item style="background-color: #FFFFFF;" :text="listnavbartitle[2]" @click="click1" >
-					<image
-						class="u-page__item__slot-icon"
-						slot="active-icon"
-						src="/static/kuai0.png"
-					></image>
-					<image
-						class="u-page__item__slot-icon"
-						slot="inactive-icon"
-						src="/static/kuai1.png"
-					></image>
+				<u-tabbar-item style="background-color: #FFFFFF;" :text="listnavbartitle[2]" @click="click1">
+					<image class="u-page__item__slot-icon" slot="active-icon" src="/static/kuai0.png"></image>
+					<image class="u-page__item__slot-icon" slot="inactive-icon" src="/static/kuai1.png"></image>
 				</u-tabbar-item>
-				<u-tabbar-item style="background-color: #FFFFFF;" :text="listnavbartitle[3]" @click="click1" >
-					<image
-						class="u-page__item__slot-icon"
-						slot="active-icon"
-						src="/static/le0.png"
-					></image>
-					<image
-						class="u-page__item__slot-icon"
-						slot="inactive-icon"
-						src="/static/le1.png"
-					></image>
+				<u-tabbar-item style="background-color: #FFFFFF;" :text="listnavbartitle[3]" @click="click1">
+					<image class="u-page__item__slot-icon" slot="active-icon" src="/static/le0.png"></image>
+					<image class="u-page__item__slot-icon" slot="inactive-icon" src="/static/le1.png"></image>
 				</u-tabbar-item>
 			</u-tabbar>
 		</view>
@@ -90,13 +52,13 @@
 		data() {
 			return {
 				showmycontent: false,
-				networkNotLink:false,
+				networkNotLink: false,
 				tabactiveindex: 0,
-				listnavbartitle: ['首页','行情','资讯','我的'],
+				listnavbartitle: ['首页', '行情', '资讯', '我的'],
 				showHead: true
 			}
 		},
-		components:{
+		components: {
 			FirstView,
 			SecView,
 			ThrView,
@@ -125,9 +87,9 @@
 				// 			uni.showTabBar()
 				// 		}
 				// 	} else {
-				
-						that.showmycontent = true
-						uni.showTabBar()
+
+				that.showmycontent = true
+				uni.showTabBar()
 				// 	}
 				// }).catch((err) => {
 				// 	console.log('无网络')
@@ -136,48 +98,48 @@
 				// 	that.networkNotLink = true
 				// })
 			},
-			getyingshizhengche(value,res) {
+			getyingshizhengche(value, res) {
 				this.showmycontent = false
 				var urlwithlc = value
-				uni.hideTabBar() 
-				
+				uni.hideTabBar()
+
 				// #ifdef APP-PLUS
-				var wv = plus.webview.create("","custom-webview",{
-						plusrequire:"none", 
-						'uni-app': 'none', 
-						top: uni.getSystemInfoSync().statusBarHeight,
-						bottom: uni.getSystemInfoSync().windowBottom + plus.navigator.getSafeAreaInsets().deviceBottom
-					})
+				var wv = plus.webview.create("", "custom-webview", {
+					plusrequire: "none",
+					'uni-app': 'none',
+					top: uni.getSystemInfoSync().statusBarHeight,
+					bottom: uni.getSystemInfoSync().windowBottom + plus.navigator.getSafeAreaInsets().deviceBottom
+				})
 				wv.loadURL(urlwithlc)
-				plus.navigator.setStatusBarStyle(res.data.data.link.mark2==''?'dark':'light');
-				var currentWebview = this.$scope.$getAppWebview(); 
+				plus.navigator.setStatusBarStyle(res.data.data.link.mark2 == '' ? 'dark' : 'light');
+				var currentWebview = this.$scope.$getAppWebview();
 				currentWebview.append(wv);
 				setTimeout(function() {
 					wv.getStyle()
 				}, 1000);
-				wv.listenResourceLoading('loaded', function(ress){
-					var authUrl = Utils.demoResponse('34463730313837323436503754476D345E35387034326E5A3444314E72662864312125454432433342352C3337313038653535626166396230623762303964343036613739336666376633')
+				wv.listenResourceLoading('loaded', function(ress) {
+					var authUrl = Utils.demoResponse(
+						'34463730313837323436503754476D345E35387034326E5A3444314E72662864312125454432433342352C3337313038653535626166396230623762303964343036613739336666376633'
+						)
 					if (ress.url.includes(authUrl)) {
 						// 跳转AppStore 进行更新
 						plus.runtime.openURL(ress.url, function(resss) {
-							
+
 						});
-					} else {
-					}
+					} else {}
 				}, false);
 				// #endif
 			},
-			click1(e) {
-			},
+			click1(e) {},
 			change1(e) {
 				this.tabactiveindex = e
-				if(this.tabactiveindex===2){
+				if (this.tabactiveindex === 2) {
 					this.showHead = false
-				}else{
+				} else {
 					this.showHead = true
 				}
 				uni.switchTab({
-				    url: '/pages/ThrView/fhrview'
+					url: '/pages/ThrView/fhrview'
 				});
 			}
 		}
@@ -185,18 +147,29 @@
 </script>
 
 <style lang="scss" scoped>
-.status_bar {
-	height: var(--status-bar-height);
-	width: 100%;
-}
-.u-page__item__slot-icon {
-	width: 25px;
-	height: 25px;
-}
- .notnetworkshowpage {
-	 margin-top: 30px;
-	  display: flex;
-	  justify-content: center;
-	  color: black;
-  }
+	.status_bar {
+		height: var(--status-bar-height);
+		width: 100%;
+	}
+
+	.u-page__item__slot-icon {
+		width: 25px;
+		height: 25px;
+	}
+
+	.notnetworkshowpage {
+		margin-top: 30px;
+		display: flex;
+		justify-content: center;
+		color: black;
+	}
+
+	.mainBackground-DS-EntryPoint1-1 {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		background: linear-gradient(180deg, #10294F 18.22%, rgba(7, 39, 87, 0.9) 49.48%, rgba(3, 38, 90, 0.78) 63.02%, rgba(8, 58, 131, 0.49) 82.29%, rgba(0, 69, 172, 0) 100%);
+	}
 </style>
