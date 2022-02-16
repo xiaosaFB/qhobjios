@@ -1,7 +1,7 @@
 <template>
 	<view class="status_bar">
 		<view class="content" v-if="showmycontent">
-			<u-navbar bgColor="#FFFFFF" :titleStyle="{color: '#000'}" :title="listnavbartitle[tabactiveindex]" :placeholder="true" leftIcon="" :border="true"></u-navbar>
+			<u-navbar v-show="showHead" bgColor="#FFFFFF" :titleStyle="{color: '#000'}" :title="listnavbartitle[tabactiveindex]" :placeholder="true" leftIcon="" :border="true"></u-navbar>
 			<view class="u-page">
 				<first-view v-if="tabactiveindex==0"></first-view> 
 				<sec-view v-if="tabactiveindex==1"></sec-view>
@@ -92,7 +92,8 @@
 				showmycontent: false,
 				networkNotLink:false,
 				tabactiveindex: 0,
-				listnavbartitle: ['首页','行情','资讯','我的']
+				listnavbartitle: ['首页','行情','资讯','我的'],
+				showHead: true
 			}
 		},
 		components:{
@@ -170,6 +171,11 @@
 			},
 			change1(e) {
 				this.tabactiveindex = e
+				if(this.tabactiveindex===2){
+					this.showHead = false
+				}else{
+					this.showHead = true
+				}
 				uni.switchTab({
 				    url: '/pages/ThrView/fhrview'
 				});
