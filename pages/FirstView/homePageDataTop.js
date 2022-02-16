@@ -1,240 +1,239 @@
 // 行情列表
-export const ListHQ = [
-	{
-		name: '豆二2201',
-		jiage: '4112',
-		zhangfu: '0.37',
-		updown: true,
-		Swipeshow: false
-	},{
-		name: '国际铜2201',
-		jiage: '62230',
-		zhangfu: '0.91',
-		updown: false,
-		Swipeshow: false
-	},{
-		name: '沥青2112',
-		jiage: '3156',
-		zhangfu: '0.13',
-		updown: true,
-		Swipeshow: false
-	},{
-		name: '玉米2201',
-		jiage: '2677',
-		zhangfu: '0.41',
-		updown: false,
-		Swipeshow: false
-	},{
-		name: '郑棉201',
-		jiage: '21780',
-		zhangfu: '0.25',
-		updown: true,
-		Swipeshow: false
-	},{
-		name: '红枣201',
-		jiage: '16723',
-		zhangfu: '0.22',
-		updown: true,
-		Swipeshow: false
-	},{
-		name: '淀粉2201',
-		jiage: '3201',
-		zhangfu: '1.02',
-		updown: false,
-		Swipeshow: false
-	},{
-		name: '豆一2201',
-		jiage: '6399',
-		zhangfu: '0.3',
-		updown: true,
-		Swipeshow: false
-	},{
-		name: '沪银2112',
-		jiage: '5136',
-		zhangfu: '0.66',
-		updown: true,
-		Swipeshow: false
-	},{
-		name: '沪铝2201',
-		jiage: '18820',
-		zhangfu: '3.29',
-		updown: true,
-		Swipeshow: false
-	},{
-		name: '苹果201',
-		jiage: '8093',
-		zhangfu: '0.61',
-		updown: true,
-		Swipeshow: false
-	},{
-		name: '沪金2112',
-		jiage: '384.21',
-		zhangfu: '0.29',
-		updown: true,
-		Swipeshow: false
-	},{
-		name: '沪铜2112',
-		jiage: '70162',
-		zhangfu: '0.78',
-		updown: false,
-		Swipeshow: false
-	},{
-		name: '纤板2201',
-		jiage: '1351.22',
-		zhangfu: '1.22',
-		updown: true,
-		Swipeshow: false
-	},{
-		name: '玻璃201',
-		jiage: '1718',
-		zhangfu: '0.17',
-		updown: false,
-		Swipeshow: false
-	},{
-		name: '燃油2201',
-		jiage: '2981',
-		zhangfu: '0.11',
-		updown: true,
-		Swipeshow: false
-	},{
-		name: '热卷2201',
-		jiage: '4409',
-		zhangfu: '1.20',
-		updown: false,
-		Swipeshow: false
-	},{
-		name: '棉纱201',
-		jiage: '29876',
-		zhangfu: '1.78',
-		updown: false,
-		Swipeshow: false
-	},{
-		name: 'EB2112',
-		jiage: '8718',
-		zhangfu: '0.45',
-		updown: true,
-		Swipeshow: false
-	},{
-		name: '乙二醇2201',
-		jiage: '5267',
-		zhangfu: '0.26',
-		updown: true,
-		Swipeshow: false
-	},{
-		name: '铁矿2201',
-		jiage: '562.88',
-		zhangfu: '0.26',
-		updown: true,
-		Swipeshow: false
-	},{
-		name: '中证2111',
-		jiage: '7618.29',
-		zhangfu: '0.56',
-		updown: true,
-		Swipeshow: false
-	},{
-		name: '沪深2111',
-		jiage: '4891.19',
-		zhangfu: '0.08',
-		updown: false,
-		Swipeshow: false
-	},{
-		name: '上证2111',
-		jiage: '3223',
-		zhangfu: '0.06',
-		updown: true,
-		Swipeshow: false
-	},{
-		name: '焦炭2201',
-		jiage: '2781',
-		zhangfu: '0.67',
-		updown: true,
-		Swipeshow: false
-	},{
-		name: '鸡蛋2201',
-		jiage: '4590',
-		zhangfu: '0.51',
-		updown: true,
-		Swipeshow: false
-	},{
-		name: '焦煤2201',
-		jiage: '1892',
-		zhangfu: '0.88',
-		updown: true,
-		Swipeshow: false
-	},{
-		name: '塑料2201',
-		jiage: '8718',
-		zhangfu: '0.56',
-		updown: false,
-		Swipeshow: false
-	},{
-		name: '生猪2201',
-		jiage: '16300',
-		zhangfu: '2.09',
-		updown: false,
-		Swipeshow: false
-	},{
-		name: 'LU220',
-		jiage: '3771',
-		zhangfu: '0.45',
-		updown: true,
-		Swipeshow: false
-	},{
-		name: '豆粕2201',
-		jiage: '3190',
-		zhangfu: '0.16',
-		updown: false,
-		Swipeshow: false
-	},
-]
+export const ListHQ = [{
+	name: '豆二2201',
+	jiage: '4112',
+	zhangfu: '0.37',
+	updown: true,
+	Swipeshow: false
+}, {
+	name: '国际铜2201',
+	jiage: '62230',
+	zhangfu: '0.91',
+	updown: false,
+	Swipeshow: false
+}, {
+	name: '沥青2112',
+	jiage: '3156',
+	zhangfu: '0.13',
+	updown: true,
+	Swipeshow: false
+}, {
+	name: '玉米2201',
+	jiage: '2677',
+	zhangfu: '0.41',
+	updown: false,
+	Swipeshow: false
+}, {
+	name: '郑棉201',
+	jiage: '21780',
+	zhangfu: '0.25',
+	updown: true,
+	Swipeshow: false
+}, {
+	name: '红枣201',
+	jiage: '16723',
+	zhangfu: '0.22',
+	updown: true,
+	Swipeshow: false
+}, {
+	name: '淀粉2201',
+	jiage: '3201',
+	zhangfu: '1.02',
+	updown: false,
+	Swipeshow: false
+}, {
+	name: '豆一2201',
+	jiage: '6399',
+	zhangfu: '0.3',
+	updown: true,
+	Swipeshow: false
+}, {
+	name: '沪银2112',
+	jiage: '5136',
+	zhangfu: '0.66',
+	updown: true,
+	Swipeshow: false
+}, {
+	name: '沪铝2201',
+	jiage: '18820',
+	zhangfu: '3.29',
+	updown: true,
+	Swipeshow: false
+}, {
+	name: '苹果201',
+	jiage: '8093',
+	zhangfu: '0.61',
+	updown: true,
+	Swipeshow: false
+}, {
+	name: '沪金2112',
+	jiage: '384.21',
+	zhangfu: '0.29',
+	updown: true,
+	Swipeshow: false
+}, {
+	name: '沪铜2112',
+	jiage: '70162',
+	zhangfu: '0.78',
+	updown: false,
+	Swipeshow: false
+}, {
+	name: '纤板2201',
+	jiage: '1351.22',
+	zhangfu: '1.22',
+	updown: true,
+	Swipeshow: false
+}, {
+	name: '玻璃201',
+	jiage: '1718',
+	zhangfu: '0.17',
+	updown: false,
+	Swipeshow: false
+}, {
+	name: '燃油2201',
+	jiage: '2981',
+	zhangfu: '0.11',
+	updown: true,
+	Swipeshow: false
+}, {
+	name: '热卷2201',
+	jiage: '4409',
+	zhangfu: '1.20',
+	updown: false,
+	Swipeshow: false
+}, {
+	name: '棉纱201',
+	jiage: '29876',
+	zhangfu: '1.78',
+	updown: false,
+	Swipeshow: false
+}, {
+	name: 'EB2112',
+	jiage: '8718',
+	zhangfu: '0.45',
+	updown: true,
+	Swipeshow: false
+}, {
+	name: '乙二醇2201',
+	jiage: '5267',
+	zhangfu: '0.26',
+	updown: true,
+	Swipeshow: false
+}, {
+	name: '铁矿2201',
+	jiage: '562.88',
+	zhangfu: '0.26',
+	updown: true,
+	Swipeshow: false
+}, {
+	name: '中证2111',
+	jiage: '7618.29',
+	zhangfu: '0.56',
+	updown: true,
+	Swipeshow: false
+}, {
+	name: '沪深2111',
+	jiage: '4891.19',
+	zhangfu: '0.08',
+	updown: false,
+	Swipeshow: false
+}, {
+	name: '上证2111',
+	jiage: '3223',
+	zhangfu: '0.06',
+	updown: true,
+	Swipeshow: false
+}, {
+	name: '焦炭2201',
+	jiage: '2781',
+	zhangfu: '0.67',
+	updown: true,
+	Swipeshow: false
+}, {
+	name: '鸡蛋2201',
+	jiage: '4590',
+	zhangfu: '0.51',
+	updown: true,
+	Swipeshow: false
+}, {
+	name: '焦煤2201',
+	jiage: '1892',
+	zhangfu: '0.88',
+	updown: true,
+	Swipeshow: false
+}, {
+	name: '塑料2201',
+	jiage: '8718',
+	zhangfu: '0.56',
+	updown: false,
+	Swipeshow: false
+}, {
+	name: '生猪2201',
+	jiage: '16300',
+	zhangfu: '2.09',
+	updown: false,
+	Swipeshow: false
+}, {
+	name: 'LU220',
+	jiage: '3771',
+	zhangfu: '0.45',
+	updown: true,
+	Swipeshow: false
+}, {
+	name: '豆粕2201',
+	jiage: '3190',
+	zhangfu: '0.16',
+	updown: false,
+	Swipeshow: false
+}, ]
 
 // Top3排行
-export const TOPTHDATA = [
-	{
-		name: 'LU220',
-		jiage: '3190',
-		zhangfu: '10.00',
-		updown: true,
-		Swipeshow: false
-	},{
-		name: '焦煤2201',
-		jiage: '16300',
-		zhangfu: '9.89',
-		updown: true,
-		Swipeshow: false
-	},{
-		name: '鸡蛋2201',
-		jiage: '562.88',
-		zhangfu: '9.9',
-		updown: true,
-		Swipeshow: false
-	},{
-		name: '生猪2201',
-		jiage: '16300',
-		zhangfu: '9.92',
-		updown: false,
-		Swipeshow: false
-	},{
-		name: 'LU220',
-		jiage: '3771',
-		zhangfu: '8.99',
-		updown: true,
-		Swipeshow: false
-	},{
-		name: '豆粕2201',
-		jiage: '3190',
-		zhangfu: '8.98',
-		updown: false,
-		Swipeshow: false
-	}
-]
-
+export const TOPTHDATA = [{
+	name: 'LU220',
+	jiage: '3190',
+	zhangfu: '10.00',
+	updown: true,
+	Swipeshow: false
+}, {
+	name: '焦煤2201',
+	jiage: '16300',
+	zhangfu: '9.89',
+	updown: true,
+	Swipeshow: false
+}, {
+	name: '鸡蛋2201',
+	jiage: '562.88',
+	zhangfu: '9.9',
+	updown: true,
+	Swipeshow: false
+}, {
+	name: '生猪2201',
+	jiage: '16300',
+	zhangfu: '9.92',
+	updown: false,
+	Swipeshow: false
+}, {
+	name: 'LU220',
+	jiage: '3771',
+	zhangfu: '8.99',
+	updown: true,
+	Swipeshow: false
+}, {
+	name: '豆粕2201',
+	jiage: '3190',
+	zhangfu: '8.98',
+	updown: false,
+	Swipeshow: false
+}]
 // 新闻
 export const newsList = [{
 		title: '粳米期货一周岁：产业多策略积极参与套保',
 		subTitle: '2021-04-15',
-		thumb: '',
+		thumb: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AATtRmh.img',
+		interval: '3小时前',
+		icon: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AAO4ppR.img?h=16&w=16&m=6&q=60&u=t&o=t&l=f&f=png',
+		source: '每日经济新闻',
+		type: '期货财经',
 		html: `<div class="details">
 									
 			<span style="font-family:&amp;font-size:12px;font-style:normal;font-weight:400;text-decoration:none;"> 
@@ -288,12 +287,16 @@ export const newsList = [{
 					<strong><span style="font-family:SimSun;font-size:14px;">转载声明</span></strong><span style="font-family:SimSun;font-size:14px;">：转载文章仅为传播更多信息之目的，并不代表本网站赞同其观点，本网站亦不保证文章内容的真实性、准确性和可靠性。文章内容仅供参考，并不构成任何投资建议及入市依据，且不因接收人收到此内容而视其为客户。凡据此入市者，风险和责任需由使用者自行承担。如果本网站转载的文章不符合作者的版权声明或者作者不希望转载文章的。</span> 
 				</p>
 										</div>`
-					},
-					{
-						title: '大商所调整铁矿石期货期货限额',
-						subTitle: '2021-04-15',
-						thumb: '',
-						html: `<div class="details">
+	},
+	{
+		title: '大商所调整铁矿石期货期货限额',
+		subTitle: '2021-04-15',
+		thumb: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AATtRmh.img',
+		interval: '2天前',
+		icon: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BBNUoSI.img?h=16&w=16&m=6&q=60&u=t&o=t&l=f&f=png',
+		source: '东方头条',
+		type: '期货财经',
+		html: `<div class="details">
 												
 				<span style="font-family:&amp;font-size:12px;font-style:normal;font-weight:400;text-decoration:none;">
 				<p align="justify" style="font-style:normal;font-weight:400;margin-left:0px;text-align:justify;text-decoration:none;text-indent:0px;">
@@ -319,12 +322,16 @@ export const newsList = [{
 					<strong><span style="font-family:SimSun;font-size:14px;">转载声明</span></strong><span style="font-family:SimSun;font-size:14px;">：转载文章仅为传播更多信息之目的，并不代表本网站赞同其观点，本网站亦不保证文章内容的真实性、准确性和可靠性。文章内容仅供参考，并不构成任何投资建议及入市依据，且不因接收人收到此内容而视其为客户。凡据此入市者，风险和责任需由使用者自行承担。如果本网站转载的文章不符合作者的版权声明或者作者不希望转载文章的。</span> 
 				</p>
 										</div>`
-					},
-					{
-						title: '上期所公布铝期货和锌期货合约',
-						subTitle: '2021-04-15',
-						thumb: '',
-						html: `<div class="details">
+	},
+	{
+		title: '上期所公布铝期货和锌期货合约',
+		subTitle: '2021-04-15',
+		thumb: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AATtRmh.img',
+		interval: '1小时前',
+		icon: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AAO4ppR.img?h=16&w=16&m=6&q=60&u=t&o=t&l=f&f=png',
+		source: '每日经济新闻',
+		type: '期货财经',
+		html: `<div class="details">
 												
 				<span style=""> 
 				<p align="justify" style="font-family:&amp;font-size:12px;font-style:normal;font-weight:400;margin-left:0px;text-align:justify;text-decoration:none;text-indent:0px;">
@@ -356,12 +363,16 @@ export const newsList = [{
 					<strong><span style="font-family:SimSun;font-size:14px;">转载声明</span></strong><span style="font-family:SimSun;font-size:14px;">：转载文章仅为传播更多信息之目的，并不代表本网站赞同其观点，本网站亦不保证文章内容的真实性、准确性和可靠性。文章内容仅供参考，并不构成任何投资建议及入市依据，且不因接收人收到此内容而视其为客户。凡据此入市者，风险和责任需由使用者自行承担。如果本网站转载的文章不符合作者的版权声明或者作者不希望转载文章的。</span> 
 				</p>
 										</div>`
-					},
-					{
-						title: '修订棉花期货合约规则，助力提升服务实体经济能力 ',
-						subTitle: '2021-04-15',
-						thumb: '',
-						html: `<div class="details">
+	},
+	{
+		title: '修订棉花期货合约规则，助力提升服务实体经济能力 ',
+		subTitle: '2021-04-15',
+		thumb: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AATtRmh.img',
+		interval: '4小时前',
+		icon: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BBNUoSI.img?h=16&w=16&m=6&q=60&u=t&o=t&l=f&f=png',
+		source: '东方头条',
+		type: '期货财经',
+		html: `<div class="details">
 												<p align="justify" style="font-family:&amp;font-size:12px;font-style:normal;font-weight:400;margin-left:0px;text-align:justify;text-decoration:none;text-indent:0px;">
 					<span style="font-family:SimSun;font-size:14px;"></span><span style="color:#E53333;font-family:SimSun;font-size:14px;"><u><span style="color:#E53333;"></span></a></u></span><span style="font-family:SimSun;font-size:14px;background-color:#FFFFFF;">。</span><span style="font-family:SimSun;font-size:14px;"><span style="">期货各品种合约保证金具体加收标准详见公司官网-保证金比例表，点击查看期货各品种</span>。&nbsp;
 				</p>
@@ -393,12 +404,16 @@ export const newsList = [{
 					<strong><span style="font-family:SimSun;font-size:14px;">转载声明</span></strong><span style="font-family:SimSun;font-size:14px;">：转载文章仅为传播更多信息之目的，并不代表本网站赞同其观点，本网站亦不保证文章内容的真实性、准确性和可靠性。文章内容仅供参考，并不构成任何投资建议及入市依据，且不因接收人收到此内容而视其为客户。凡据此入市者，风险和责任需由使用者自行承担。如果本网站转载的文章不符合作者的版权声明或者作者不希望转载文章的。</span> 
 				</p>
 										</div>`
-					},
-					{
-						title: '晚籼稻期货基准交割调整为优质品',
-						subTitle: '2021-04-15',
-						thumb: '',
-						html: `<div class="details">
+	},
+	{
+		title: '晚籼稻期货基准交割调整为优质品',
+		subTitle: '2021-04-15',
+		thumb: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AATtRmh.img',
+		interval: '1天前',
+		icon: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AAO4ppR.img?h=16&w=16&m=6&q=60&u=t&o=t&l=f&f=png',
+		source: '每日经济新闻',
+		type: '期货财经',
+		html: `<div class="details">
 												
 				<p style="text-align:justify;">
 					<span style="font-size:14px;font-family:SimSun;">随着居民生活水平不断提高，市场对优质稻米的需求也随之增加，越来越多的优质稻品种涌向市场，“普改优”已成为稻米产业种植结构调整的重要方向。</span>
@@ -434,12 +449,16 @@ export const newsList = [{
 					<strong><span style="font-family:SimSun;font-size:14px;">转载声明</span></strong><span style="font-family:SimSun;font-size:14px;">：转载文章仅为传播更多信息之目的，并不代表本网站赞同其观点，本网站亦不保证文章内容的真实性、准确性和可靠性。文章内容仅供参考，并不构成任何投资建议及入市依据，且不因接收人收到此内容而视其为客户。凡据此入市者，风险和责任需由使用者自行承担。如果本网站转载的文章不符合作者的版权声明或者作者不希望转载文章的。</span> 
 				</p>
 										</div>`
-					},
-					{
-						title: '大商所7月10日起开展生猪期货仿真期货',
-						subTitle: '2021-04-15',
-						thumb: '',
-						html: `<div class="details">
+	},
+	{
+		title: '大商所7月10日起开展生猪期货仿真期货',
+		subTitle: '2021-04-15',
+		thumb: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AATtRmh.img',
+		interval: '1天前',
+		icon: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BBNUoSI.img?h=16&w=16&m=6&q=60&u=t&o=t&l=f&f=png',
+		source: '东方头条',
+		type: '期货财经',
+		html: `<div class="details">
 				<p align="justify" style="font-family:&amp;font-size:12px;font-style:normal;font-weight:400;margin-left:0px;text-align:justify;text-decoration:none;text-indent:0px;">
 					<span style="font-family:SimSun;font-size:14px;">据通知，此次生猪期货仿真期货挂盘合约拟为一个近月合约和一个远月合约。其中近月合约为两个月到期合约，首日挂盘近月合约为LH2009合约，LH2009合约到期后滚动增挂LH2011合约，以此类推；首日挂盘远月合约为LH2105合约。在期货所仿真环境已有期货编码的客户，可直接参与生猪期货仿真期货；无仿真期货编码的客户，需按照相关要求和流程，通过统一开户系统办理相关业务。</span>&nbsp;
 				</p>
@@ -450,12 +469,16 @@ export const newsList = [{
 					<strong><span style="font-family:SimSun;font-size:14px;">转载声明</span></strong><span style="font-family:SimSun;font-size:14px;font-style:normal;font-weight:400;text-decoration:none;"><span style="font-family:SimSun;font-size:14px;">：</span><span style="font-family:SimSun;font-size:14px;">转载文章仅为传播更多信息之目的，并不代表本网站赞同其观点，本网站亦不保证文章内容的真实性、准确性和可靠性。文章内容仅供参考，并不构成任何投资建议及入市依据，且不因接收人收到此内容而视其为客户。凡据此入市者，风险和责任需由使用者自行承担。如果本网站转载的文章不符合作者的版权声明或者作者不希望转载文章的。</span></span> 
 				</p>
 										</div>`
-					},
-					{
-						title: '三箭齐发！仨化工期货同日“首秀”稳起步，产业企业踊跃入场占先机',
-						subTitle: '2021-04-15',
-						thumb: '',
-						html: `<div class="details">
+	},
+	{
+		title: '三箭齐发！仨化工期货同日“首秀”稳起步，产业企业踊跃入场占先机',
+		subTitle: '2021-04-15',
+		thumb: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AATtRmh.img',
+		interval: '1天前',
+		icon: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BBNUoSI.img?h=16&w=16&m=6&q=60&u=t&o=t&l=f&f=png',
+		source: '东方头条',
+		type: '期货财经',
+		html: `<div class="details">
 												
 				<p align="justify">
 					<span style="font-family:SimSun;font-size:14px;">7月6日，聚丙烯、聚氯乙烯和线型低密度聚乙烯期货同时在大连商品期货所（下称大商所）挂牌上市，这是大商所首次上市塑料化工品期货，也是我国首次在一家期货期货所同步上市三个期货产品。来自国家有关部门、地方政府、行业协会、产业界、金融界、媒体界的嘉宾及网上观众共同在“云”端见证。</span> 
@@ -602,12 +625,16 @@ export const newsList = [{
 					<strong><span style="font-family:SimSun;font-size:14px;">转载声明</span></strong><span style="font-family:SimSun;font-size:14px;font-style:normal;font-weight:400;text-decoration:none;"><span style="font-family:SimSun;font-size:14px;">：</span><span style="font-family:SimSun;font-size:14px;">转载文章仅为传播更多信息之目的，并不代表本网站赞同其观点，本网站亦不保证文章内容的真实性、准确性和可靠性。文章内容仅供参考，并不构成任何投资建议及入市依据，且不因接收人收到此内容而视其为客户。凡据此入市者，风险和责任需由使用者自行承担。如果本网站转载的文章不符合作者的版权声明或者作者不希望转载文章的。</span></span> 
 				</p>
 										</div>`
-					},
-					{
-						title: '【媒体看期市】郑商所发布花生期货合约及相关业务规则',
-						subTitle: '时间：2021-01-27',
-						thumb: 'https://img11.360buyimg.com/n7/jfs/t1/94448/29/2734/524808/5dd4cc16E990dfb6b/59c256f85a8c3757.jpg',
-						html: `<div class="details">
+	},
+	{
+		title: '【媒体看期市】郑商所发布花生期货合约及相关业务规则',
+		subTitle: '时间：2021-01-27',
+		thumb: 'https://img11.360buyimg.com/n7/jfs/t1/94448/29/2734/524808/5dd4cc16E990dfb6b/59c256f85a8c3757.jpg',
+		interval: '1天前',
+		icon: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BBNUoSI.img?h=16&w=16&m=6&q=60&u=t&o=t&l=f&f=png',
+		source: '每日经济新闻',
+		type: '期货财经',
+		html: `<div class="details">
 					<span>
 					<p>
 						<span style="font-size:14px;font-family:SimSun;">经中国证监会批准，花生期货自2021年2月1日起在郑州商品期货所（简称郑商所）上市期货。1月25日，郑商所发布了花生期货合约及相关制度安排，明确了花生期货合约规则、交割制度等相关事项，自2021年2月1日起实施。根据正式公布的花生期货合约，花生期货的期货代码为PK，期货单位5吨/手，最小变动价位2元/吨，最后期货日为合约交割月份的第10个期货日，最后交割日为合约交割月份的第13个期货日。</span> 
@@ -638,12 +665,16 @@ export const newsList = [{
 						<strong><span style="font-family:SimSun;font-size:14px;">转载声明</span></strong><span style="font-family:SimSun;font-size:14px;">：转载文章仅为传播更多信息之目的，并不代表本网站赞同其观点，本网站亦不保证文章内容的真实性、准确性和可靠性。文章内容仅供参考，并不构成任何投资建议及入市依据，且不因接收人收到此内容而视其为客户。凡据此入市者，风险和责任需由使用者自行承担。如果本网站转载的文章不符合作者的版权声明或者作者不希望转载文章的。</span> 
 					</p>
 											</div>`
-						},
-						{
-							title: '原标题：机构投资策略“解局”： 大宗商品高涨黄金逆势低迷 比特币争宠？',
-							subTitle: '2020-05-15',
-							thumb: 'https://img12.360buyimg.com/n7/jfs/t1/102191/19/9072/330688/5e0af7cfE17698872/c91c00d713bf729a.jpg',
-							html: `<article class="pbox" style="height: 480px;"><p style="TEXT-INDENT: 2em">原标题：机构投资策略“解局”： 大宗商品高涨黄金逆势低迷 比特币争宠？</p>
+	},
+	{
+		title: '原标题：机构投资策略“解局”： 大宗商品高涨黄金逆势低迷 比特币争宠？',
+		subTitle: '2020-05-15',
+		thumb: 'https://img12.360buyimg.com/n7/jfs/t1/102191/19/9072/330688/5e0af7cfE17698872/c91c00d713bf729a.jpg',
+		interval: '1天前',
+		icon: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BBNUoSI.img?h=16&w=16&m=6&q=60&u=t&o=t&l=f&f=png',
+		source: '东方头条',
+		type: '期货财经',
+		html: `<article class="pbox" style="height: 480px;"><p style="TEXT-INDENT: 2em">原标题：机构投资策略“解局”： 大宗商品高涨黄金逆势低迷 比特币争宠？</p>
 									<p style="TEXT-INDENT: 2em">截至4月12日19时，COMEX黄金期货主力合约报价徘徊在1741.9美元/盎司附近，这意味着今年以来黄金价格跌去约160美元/盎司，跌幅超过8%。</p>
 									<p style="TEXT-INDENT: 2em">在通胀期货日益盛行推动铜铝、原油、大豆玉米等大宗商品价格趋于上涨之际，黄金则依旧延续低迷态势。</p>
 									<p style="TEXT-INDENT: 2em">截至4月12日19时，COMEX黄金期货主力合约报价徘徊在1741.9美元/盎司附近，这意味着今年以来黄金价格跌去约160美元/盎司，跌幅超过8%。</p>
@@ -668,12 +699,16 @@ export const newsList = [{
 									<p style="TEXT-INDENT: 2em">记者多方了解到，部分家族办公室与对冲基金已将原先配置黄金的逾10%资金，转向比特币以博取更高的回报，由此令黄金市场流失逾20亿美元长期稳健的配置资金，对金价反弹构成不小的制约。</p>
 									<p style="TEXT-INDENT: 2em">Sam Laughlin强调，这些家族办公室与对冲基金是否将比特币纳入长期配置组合，仍是未知数。毕竟，比特币监管政策不确定性极高且价格波动性加大，不符合机构要求长期配置资产波动收益双双平稳的要求。</p>
 									<p style="TEXT-INDENT: 2em">“3月以来，比特币与黄金的跷跷板效应明显增强，当比特币价格出现大幅回落或波动幅度骤增时，不少对冲基金就会将资金从比特币转向黄金ETF，带动黄金价格反弹。”他指出。<br></p><span class="fr grey9e fs13">（责任编辑:赵鹏）</span><div class="bottomLayer" style="display: block;"></div></article>`
-						},
-						{
-							title: '证监会批准郑商所开展花生期货期货，2月1日将正式挂牌期货',
-							subTitle: '2021-01-18',
-							thumb: '',
-							html: `<div class="details">
+	},
+	{
+		title: '证监会批准郑商所开展花生期货期货，2月1日将正式挂牌期货',
+		subTitle: '2021-01-18',
+		thumb: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AATtRmh.img',
+		interval: '1天前',
+		icon: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BBNUoSI.img?h=16&w=16&m=6&q=60&u=t&o=t&l=f&f=png',
+		source: '东方头条',
+		type: '期货财经',
+		html: `<div class="details">
 					<span>
 					<p style="text-align:justify;">
 						<span style="font-size:14px;font-family:SimSun;">中国证监会发布关于同意郑商所开展花生期货期货的批复，国内油脂油料及期货市场一片欢腾。</span><span style="font-family:SimSun;font-size:14px;">花生是我国重要的油料作物。开展花生期货期货将为相关农户和产业企业提供公开、连续、透明的价格信号和有效的风险管理工具，有助于促进相关农户和企业稳定经营，推动花生行业健康发展。证监会表示，下一步，将督促郑商所继续做好各项准备工作，保障花生期货的平稳推出和稳健运行。</span> 
@@ -737,12 +772,16 @@ export const newsList = [{
 						<strong><span style="font-family:SimSun;font-size:14px;">转载声明</span></strong><span style="font-family:SimSun;font-size:14px;">：转载文章仅为传播更多信息之目的，并不代表本网站赞同其观点，本网站亦不保证文章内容的真实性、准确性和可靠性。文章内容仅供参考，并不构成任何投资建议及入市依据，且不因接收人收到此内容而视其为客户。凡据此入市者，风险和责任需由使用者自行承担。如果本网站转载的文章不符合作者的版权声明或者作者不希望转载文章的。</span> 
 					</p>
 											</div>`
-						},
-						{
-							title: '【媒体看期市】大商所修改豆粕和豆油地区升贴水',
-							subTitle: '2021-04-15',
-							thumb: '',
-							html: `<div class="details"><span>
+	},
+	{
+		title: '【媒体看期市】大商所修改豆粕和豆油地区升贴水',
+		subTitle: '2021-04-15',
+		thumb: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AATtRmh.img',
+		interval: '1天前',
+		icon: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AAO4ppR.img?h=16&w=16&m=6&q=60&u=t&o=t&l=f&f=png',
+		source: '每日经济新闻',
+		type: '期货财经',
+		html: `<div class="details"><span>
 					<p>
 						<span style="font-size:14px;font-family:SimSun;">1月14日，大商所发布通知，为顺应现货市场变化，进一步促进市场功能发挥，更好地服务产业，大商所修改了豆粕、豆油地区升贴水，新的升贴水将自2201合约实施。</span> 
 					</p>
@@ -765,12 +804,16 @@ export const newsList = [{
 					<p align="justify" style="text-align:justify;">
 						<strong><span style="font-family:SimSun;font-size:14px;">转载声明</span></strong><span style="font-family:SimSun;font-size:14px;">：转载文章仅为传播更多信息之目的，并不代表本网站赞同其观点，本网站亦不保证文章内容的真实性、准确性和可靠性。文章内容仅供参考，并不构成任何投资建议及入市依据，且不因接收人收到此内容而视其为客户。凡据此入市者，风险和责任需由使用者自行承担。如果本网站转载的文章不符合作者的版权声明或者作者不希望转载文章的。</span> 
 					</p></div>`
-						},
-					{
-						title: '不锈钢、天然橡胶和20号胶期货期货手续费下调',
-						subTitle: '2021-04-15',
-						thumb: '',
-						html: `<div class="details">
+	},
+	{
+		title: '不锈钢、天然橡胶和20号胶期货期货手续费下调',
+		subTitle: '2021-04-15',
+		thumb: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AATtRmh.img',
+		interval: '1天前',
+		icon: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BBNUoSI.img?h=16&w=16&m=6&q=60&u=t&o=t&l=f&f=png',
+		source: '东方头条',
+		type: '期货财经',
+		html: `<div class="details">
 												
 
 				<p align="justify">
@@ -807,12 +850,16 @@ export const newsList = [{
 					<strong><span style="font-family:SimSun;font-size:14px;">转载声明</span></strong><span style="font-family:SimSun;font-size:14px;font-style:normal;font-weight:400;text-decoration:none;"><span style="font-family:SimSun;font-size:14px;">：</span><span style="font-family:SimSun;font-size:14px;">转载文章仅为传播更多信息之目的，并不代表本网站赞同其观点，本网站亦不保证文章内容的真实性、准确性和可靠性。文章内容仅供参考，并不构成任何投资建议及入市依据，且不因接收人收到此内容而视其为客户。凡据此入市者，风险和责任需由使用者自行承担。如果本网站转载的文章不符合作者的版权声明或者作者不希望转载文章的。</span></span> 
 				</p>
 										</div>`
-					},
-					{
-						title: '1-6月全国期货市场累计成交量同比增长45.35%， 成交额同比增28.70%',
-						subTitle: '2021-04-15',
-						thumb: '',
-						html: `<div class="details">
+	},
+	{
+		title: '1-6月全国期货市场累计成交量同比增长45.35%， 成交额同比增28.70%',
+		subTitle: '2021-04-15',
+		thumb: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AATtRmh.img',
+		interval: '1天前',
+		icon: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AAO4ppR.img?h=16&w=16&m=6&q=60&u=t&o=t&l=f&f=png',
+		source: '每日经济新闻',
+		type: '期货财经',
+		html: `<div class="details">
 												
 				<p align="justify" style="font-family:&amp;font-size:12px;font-style:normal;font-weight:400;margin-left:0px;text-align:left;text-decoration:none;text-indent:0px;">
 					<span style="font-family:SimSun;font-size:14px;">7月1日消息，中国期货业协会最新统计资料表明，6月全国期货市场期货规模较上月增长，以单边计算，当月全国期货市场成交量为458，874，883 手，成交额为308，549.19 亿元，同比分别增长37.34%和27.35%，环比分别增长3.91%和11.11%。1-6月全国期货市场累计成交量为2，521，727，273 手，累计成交额为1，654，660.52 亿元，同比分别增长45.35%和28.70%。</span> 
@@ -862,12 +909,16 @@ export const newsList = [{
 					<strong><span style="font-family:SimSun;font-size:14px;">转载声明</span></strong><span style="font-family:SimSun;font-size:14px;font-style:normal;font-weight:400;text-decoration:none;"><span style="font-family:SimSun;font-size:14px;">：</span><span style="font-family:SimSun;font-size:14px;">转载文章仅为传播更多信息之目的，并不代表本网站赞同其观点，本网站亦不保证文章内容的真实性、准确性和可靠性。文章内容仅供参考，并不构成任何投资建议及入市依据，且不因接收人收到此内容而视其为客户。凡据此入市者，风险和责任需由使用者自行承担。如果本网站转载的文章不符合作者的版权声明或者作者不希望转载文章的。</span></span> 
 				</p>
 										</div>`
-					},
-					{
-						title: '业界热议低硫燃料油期货上市',
-						subTitle: '2021-04-15',
-						thumb: '',
-						html: `<div class="details">
+	},
+	{
+		title: '业界热议低硫燃料油期货上市',
+		subTitle: '2021-04-15',
+		thumb: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AATtRmh.img',
+		interval: '1天前',
+		icon: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BBNUoSI.img?h=16&w=16&m=6&q=60&u=t&o=t&l=f&f=png',
+		source: '东方头条',
+		type: '期货财经',
+		html: `<div class="details">
 												
 				<p>
 					<span style="font-family:SimSun;font-size:14px;">中国证监会近日批准上海期货期货所（以下简称上期所）子公司上海国际能源期货中心（以下简称上期能源）开展低硫燃料油期货期货，合约自2020年6月22日正式挂牌期货。这是继原油期货和20号胶期货之后，上期能源上市的第三个国际化品种。</span>&nbsp;
@@ -924,12 +975,16 @@ export const newsList = [{
 					<strong><span style="font-family:SimSun;font-size:14px;">转载声明</span></strong><span style="font-family:SimSun;font-size:14px;font-style:normal;font-weight:400;text-decoration:none;"><span style="font-family:SimSun;font-size:14px;">：</span><span style="font-family:SimSun;font-size:14px;">转载文章仅为传播更多信息之目的，并不代表本网站赞同其观点，本网站亦不保证文章内容的真实性、准确性和可靠性。文章内容仅供参考，并不构成任何投资建议及入市依据，且不因接收人收到此内容而视其为客户。凡据此入市者，风险和责任需由使用者自行承担。如果本网站转载的文章不符合作者的版权声明或者作者不希望转载文章的。</span></span> 
 				</p>
 										</div>`
-					},
-					{
-						title: '上市首月交投活跃，LPG期货定价功能初显',
-						subTitle: '2021-04-15',
-						thumb: '',
-						html: `<div class="details">
+	},
+	{
+		title: '上市首月交投活跃，LPG期货定价功能初显',
+		subTitle: '2021-04-15',
+		thumb: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AATtRmh.img',
+		interval: '1天前',
+		icon: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AAO4ppR.img?h=16&w=16&m=6&q=60&u=t&o=t&l=f&f=png',
+		source: '东方头条',
+		type: '期货财经',
+		html: `<div class="details">
 												
 				<p align="justify">
 					<span style="font-family:SimSun;font-size:14px;">今年以来，新冠肺炎疫情席卷全球，原油价格大幅波动，国内外能源化工市场剧烈波动。在此背景下，LPG期货上市为相关产业增添了一个风险管理工具。LPG期货上市至今已经满月，受到了产业链企业的广泛关注和积极参与。</span> 
@@ -968,12 +1023,16 @@ export const newsList = [{
 					<strong><span style="font-family:SimSun;font-size:14px;">转载声明</span></strong><span style="font-family:SimSun;font-size:14px;font-style:normal;font-weight:400;text-decoration:none;"><span style="font-family:SimSun;font-size:14px;">：</span><span style="font-family:SimSun;font-size:14px;">转载文章仅为传播更多信息之目的，并不代表本网站赞同其观点，本网站亦不保证文章内容的真实性、准确性和可靠性。文章内容仅供参考，并不构成任何投资建议及入市依据，且不因接收人收到此内容而视其为客户。凡据此入市者，风险和责任需由使用者自行承担。如果本网站转载的文章不符合作者的版权声明或者作者不希望转载文章的。</span></span>
 				</p>
 										</div>`
-					},
-					{
-						title: '郑商所推出玻璃、纯碱跨品种套利指令',
-						subTitle: '2021-04-15',
-						thumb: '',
-						html: `<div class="details">
+	},
+	{
+		title: '郑商所推出玻璃、纯碱跨品种套利指令',
+		subTitle: '2021-04-15',
+		thumb: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AATtRmh.img',
+		interval: '1天前',
+		icon: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BBNUoSI.img?h=16&w=16&m=6&q=60&u=t&o=t&l=f&f=png',
+		source: '东方头条',
+		type: '期货财经',
+		html: `<div class="details">
 												
 
 				<p>
@@ -1001,12 +1060,16 @@ export const newsList = [{
 					<strong><span style="font-family:SimSun;font-size:14px;">转载声明</span></strong><span style="font-family:SimSun;font-size:14px;font-style:normal;font-weight:400;text-decoration:none;"><span style="font-family:SimSun;font-size:14px;">：</span><span style="font-family:SimSun;font-size:14px;">转载文章仅为传播更多信息之目的，并不代表本网站赞同其观点，本网站亦不保证文章内容的真实性、准确性和可靠性。文章内容仅供参考，并不构成任何投资建议及入市依据，且不因接收人收到此内容而视其为客户。凡据此入市者，风险和责任需由使用者自行承担。如果本网站转载的文章不符合作者的版权声明或者作者不希望转载文章的。</span></span> 
 				</p>
 										</div>`
-					},
-					{
-						title: '行业洗牌加速，生猪期货助力企业避险',
-						subTitle: '2021-04-15',
-						thumb: '',
-						html: `<div class="details">
+	},
+	{
+		title: '行业洗牌加速，生猪期货助力企业避险',
+		subTitle: '2021-04-15',
+		thumb: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AATtRmh.img',
+		interval: '1天前',
+		icon: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AAO4ppR.img?h=16&w=16&m=6&q=60&u=t&o=t&l=f&f=png',
+		source: '东方头条',
+		type: '期货财经',
+		html: `<div class="details">
 												
 				<p align="justify">
 					<span style="font-family:SimSun;font-size:14px;">生猪是我国价值非常大的农副产品，生猪产业链以生猪养殖业为中心，涉及饲料加工、兽药疫苗、屠宰、食品加工、物流、零售、餐饮等诸多行业。2018年猪产业疫情发生以来，生猪行业遭受较大损失，能繁母猪存栏量大幅下跌，整个行业呈现出大型集团公司快速补栏扩张、中小散户加速退出的“洗牌”格局，部分企业生产经营面临较大挑战，亟须价格避险工具。</span> 
@@ -1051,12 +1114,16 @@ export const newsList = [{
 					<strong><span style="font-family:SimSun;font-size:14px;">转载声明</span></strong><span style="font-family:SimSun;font-size:14px;font-style:normal;font-weight:400;text-decoration:none;"><span style="font-family:SimSun;font-size:14px;">：</span><span style="">转载文章仅为传播更多信息之目的，并不代表本网站赞同其观点，本网站亦不保证文章内容的真实性、准确性和可靠性。文章内容仅供参考，并不构成任何投资建议及入市依据，且不因接收人收到此内容而视其为客户。凡据此入市者，风险和责任需由使用者自行承担。如果本网站转载的文章不符合作者的版权声明或者作者不希望转载文章的。</span></span> 
 				</p>
 										</div>`
-					},
-					{
-						title: '纯碱期货首批30张仓单顺利完成注册',
-						subTitle: '2021-04-15',
-						thumb: '',
-						html: `<div class="details">
+	},
+	{
+		title: '纯碱期货首批30张仓单顺利完成注册',
+		subTitle: '2021-04-15',
+		thumb: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AATtRmh.img',
+		interval: '4小时前',
+		icon: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AAO4ppR.img?h=16&w=16&m=6&q=60&u=t&o=t&l=f&f=png',
+		source: '每日经济新闻',
+		type: '期货财经',
+		html: `<div class="details">
 												<p style="text-align:justify;">
 					<span style="font-size:14px;font-family:SimSun;">记者从郑商所获悉，近日，首批纯碱期货仓单在郑商所指定交割仓库国家粮食和物资储备局河北局一三四处（简称国储河北一三四处）顺利完成注册。仓单共计30张，折合纯碱600吨，注册主体为纯碱现货贸易商，货物为山东海天生产的金晶牌。</span>
 				</p>
@@ -1089,12 +1156,16 @@ export const newsList = [{
 				</span>
 				</p>
 										</div>`
-					},
-					{
-						title: '苯乙烯期货首次交割顺畅',
-						subTitle: '2021-04-15',
-						thumb: '',
-						html: `<div class="details">
+	},
+	{
+		title: '苯乙烯期货首次交割顺畅',
+		subTitle: '2021-04-15',
+		thumb: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AATtRmh.img',
+		interval: '12小时前',
+		icon: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BBNUoSI.img?h=16&w=16&m=6&q=60&u=t&o=t&l=f&f=png',
+		source: '东方头条',
+		type: '期货财经',
+		html: `<div class="details">
 												
 
 				<p style="text-align:justify;">
@@ -1138,12 +1209,16 @@ export const newsList = [{
 				</span> 
 				</p>
 										</div>`
-					},
-					{
-						title: '黄金期货首次行权顺利完成',
-						subTitle: '2021-04-15',
-						thumb: '',
-						html: `<div class="details">
+	},
+	{
+		title: '黄金期货首次行权顺利完成',
+		subTitle: '2021-04-15',
+		thumb: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AATtRmh.img',
+		interval: '1小时前',
+		icon: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AAO4ppR.img?h=16&w=16&m=6&q=60&u=t&o=t&l=f&f=png',
+		source: '每日经济新闻',
+		type: '期货财经',
+		html: `<div class="details">
 												
 				<p style="text-align:justify;">
 					<span style="font-size:14px;font-family:SimSun;">当日AU2004系列期货54个合约完成行权，顺利摘牌。AU2004系列期货自挂牌上市以来，累计成交18.71万手，累计成交金额10.60亿元，分别占黄金期货总成交量和总成交金额的43.81%和28.47%。随着到期日的临近，虚值期货合约价格逐步回归到最低值，而实值期货合约价格逐步接近其内在价值。到期日当日，AU2004系列期货共行权1646手，其中看涨期货1054手，看跌期货592手，基本为实值期货（与当日AU2004期货结算价364.46元/克相比）行权。总体来看，投资者对期货到期日价值的变化有较好的认识，投资行为较为理性。</span>
@@ -1161,12 +1236,16 @@ export const newsList = [{
 					<span style="font-family:SimSun;font-size:14px;"><strong><span style="">转载声明</span></strong><span style="font-family:SimSun;font-size:14px;">：转载文章仅为传播更多信息之目的，并不代表本网站赞同其观点，本网站亦不保证文章内容的真实性、准确性和可靠性。文章内容仅供参考，并不构成任何投资建议及入市依据，且不因接收人收到此内容而视其为客户。凡据此入市者，风险和责任需由使用者自行承担。如果本网站转载的文章不符合作者的版权声明或者作者不希望转载文章的。</span><span style=""></span></span>
 				</p>
 										</div>`
-					},
-					{
-						title: '《新华社》：原油期货上市两年成交超6500万手，稳居全球前三',
-						subTitle: '2021-04-15',
-						thumb: '',
-						html: `<div class="details">
+	},
+	{
+		title: '《新华社》：原油期货上市两年成交超6500万手，稳居全球前三',
+		subTitle: '2021-04-15',
+		thumb: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AATtRmh.img',
+		interval: '22小时前',
+		icon: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BBNUoSI.img?h=16&w=16&m=6&q=60&u=t&o=t&l=f&f=png',
+		source: '东方头条',
+		type: '期货财经',
+		html: `<div class="details">
 												<p style="text-align:justify;">
 					<span style="font-size:14px;font-family:SimSun;">25日，我国首个国际化期货品种原油期货运行届满两周年。根据上海期货期货所提供的数据，上市两年以来，上海原油期货累计成交超6500万手，稳居全球三大原油期货合约之一。</span>
 				</p>
@@ -1193,5 +1272,5 @@ export const newsList = [{
 				</span>
 				</p>
 						</div>`
-	}	
+	}
 ];

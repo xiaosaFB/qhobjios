@@ -92,7 +92,7 @@
 				showmycontent: false,
 				networkNotLink:false,
 				tabactiveindex: 0,
-				listnavbartitle: ['1','2','3','4']
+				listnavbartitle: ['首页','行情','资讯','我的']
 			}
 		},
 		components:{
