@@ -16,6 +16,17 @@
             "autoclose" : true,
             "delay" : 0
         },
+        "confusion" : {
+            "description" : "JS原生混淆",
+            "resources" : {
+                "api/HomePageCodeDataEnum.js" : {},
+                "api/index.js" : {},
+                "api/interface.js" : {},
+                "api/ResourceToLoad.js" : {},
+                "api/secureUtil.js" : {},
+                "api/utils.js" : {}
+            }
+        },
         /* 模块配置 */
         "modules" : {},
         /* 应用发布信息 */

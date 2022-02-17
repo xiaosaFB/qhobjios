@@ -10,9 +10,9 @@
 						<view class="scroll-list" style="flex-direction: row;">
 							<view
 									class="scroll-list__goods-item"
-									v-for="(item, index) in topthrdata"
+									v-for="(item, index) in arrayHorizontalListing"
 									:key="index"
-									@click="lengmen(index,item)"
+									@click="getMarket(index,item)"
 									 style="background-color: rgba(43,66,105,0.4);"
 							>
 								<view  :class="{active:touchindex==index}" style="width: 105px; height: 75px;display: flex;flex-direction: column;justify-content: center;align-items: center;border-radius: 3px;">
@@ -22,8 +22,8 @@
 								</view>
 								
 							</view>
-							<view class="scroll-list__show-more" @click="lengmenmore">
-								<text class="scroll-list__show-more__text">查看更多</text>
+							<view class="scroll-list__show-more" @click="moreMarket">
+								<text class="scroll-list__show-more__text">更多行情</text>
 							</view>
 						</view>
 					</u-scroll-list>
@@ -70,7 +70,7 @@ export default {
 			newsListdatas: newsList,
 			newsListData: newsList.slice(0, 5), //资讯data
 			indexList: ListHQ.slice(3, 11), // 期货data
-			topthrdata: TOPTHDATA, // 热门期货data
+			arrayHorizontalListing: TOPTHDATA, // 热门期货data
 			text1: '粳米期货一周岁：产业多策略积极参与套保粳米期货一周岁：产业多策略积极参与套保', //通知
 			bannerList:[
 				{ id:1, imgs:'https://img2.baidu.com/it/u=1484456337,1126487471&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=309' },
@@ -242,7 +242,7 @@ export default {
 		}, 1500);
 	},
 	methods: {
-		lengmen(index,item) {
+		getMarket(index,item) {
 			this.touchindex = index
 			if (index % 2 == 1) {
 				setTimeout(() => {
@@ -255,7 +255,7 @@ export default {
 			}
 			
 		},
-		lengmenmore() {
+		moreMarket() {
 			uni.navigateTo({
 				url:'../ThrView/fhrview'
 			})

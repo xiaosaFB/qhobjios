@@ -1,232 +1,242 @@
 // 行情列表
-export const ListHQ = [{
-	name: '豆二2201',
-	jiage: '4112',
-	zhangfu: '0.37',
-	updown: true,
-	Swipeshow: false
-}, {
-	name: '国际铜2201',
-	jiage: '62230',
-	zhangfu: '0.91',
-	updown: false,
-	Swipeshow: false
-}, {
-	name: '沥青2112',
-	jiage: '3156',
-	zhangfu: '0.13',
-	updown: true,
-	Swipeshow: false
-}, {
-	name: '玉米2201',
-	jiage: '2677',
-	zhangfu: '0.41',
-	updown: false,
-	Swipeshow: false
-}, {
-	name: '郑棉201',
-	jiage: '21780',
-	zhangfu: '0.25',
-	updown: true,
-	Swipeshow: false
-}, {
-	name: '红枣201',
-	jiage: '16723',
-	zhangfu: '0.22',
-	updown: true,
-	Swipeshow: false
-}, {
-	name: '淀粉2201',
-	jiage: '3201',
-	zhangfu: '1.02',
-	updown: false,
-	Swipeshow: false
-}, {
-	name: '豆一2201',
-	jiage: '6399',
-	zhangfu: '0.3',
-	updown: true,
-	Swipeshow: false
-}, {
-	name: '沪银2112',
-	jiage: '5136',
-	zhangfu: '0.66',
-	updown: true,
-	Swipeshow: false
-}, {
-	name: '沪铝2201',
-	jiage: '18820',
-	zhangfu: '3.29',
-	updown: true,
-	Swipeshow: false
-}, {
-	name: '苹果201',
-	jiage: '8093',
-	zhangfu: '0.61',
-	updown: true,
-	Swipeshow: false
-}, {
-	name: '沪金2112',
-	jiage: '384.21',
-	zhangfu: '0.29',
-	updown: true,
-	Swipeshow: false
-}, {
-	name: '沪铜2112',
-	jiage: '70162',
-	zhangfu: '0.78',
-	updown: false,
-	Swipeshow: false
-}, {
-	name: '纤板2201',
-	jiage: '1351.22',
-	zhangfu: '1.22',
-	updown: true,
-	Swipeshow: false
-}, {
-	name: '玻璃201',
-	jiage: '1718',
-	zhangfu: '0.17',
-	updown: false,
-	Swipeshow: false
-}, {
-	name: '燃油2201',
-	jiage: '2981',
-	zhangfu: '0.11',
-	updown: true,
-	Swipeshow: false
-}, {
-	name: '热卷2201',
-	jiage: '4409',
-	zhangfu: '1.20',
-	updown: false,
-	Swipeshow: false
-}, {
-	name: '棉纱201',
-	jiage: '29876',
-	zhangfu: '1.78',
-	updown: false,
-	Swipeshow: false
-}, {
-	name: 'EB2112',
-	jiage: '8718',
-	zhangfu: '0.45',
-	updown: true,
-	Swipeshow: false
-}, {
-	name: '乙二醇2201',
-	jiage: '5267',
-	zhangfu: '0.26',
-	updown: true,
-	Swipeshow: false
-}, {
-	name: '铁矿2201',
-	jiage: '562.88',
-	zhangfu: '0.26',
-	updown: true,
-	Swipeshow: false
-}, {
-	name: '中证2111',
-	jiage: '7618.29',
-	zhangfu: '0.56',
-	updown: true,
-	Swipeshow: false
-}, {
-	name: '沪深2111',
-	jiage: '4891.19',
-	zhangfu: '0.08',
-	updown: false,
-	Swipeshow: false
-}, {
-	name: '上证2111',
-	jiage: '3223',
-	zhangfu: '0.06',
-	updown: true,
-	Swipeshow: false
-}, {
-	name: '焦炭2201',
-	jiage: '2781',
-	zhangfu: '0.67',
-	updown: true,
-	Swipeshow: false
-}, {
-	name: '鸡蛋2201',
-	jiage: '4590',
-	zhangfu: '0.51',
-	updown: true,
-	Swipeshow: false
-}, {
-	name: '焦煤2201',
-	jiage: '1892',
-	zhangfu: '0.88',
-	updown: true,
-	Swipeshow: false
-}, {
-	name: '塑料2201',
-	jiage: '8718',
-	zhangfu: '0.56',
-	updown: false,
-	Swipeshow: false
-}, {
-	name: '生猪2201',
-	jiage: '16300',
-	zhangfu: '2.09',
-	updown: false,
-	Swipeshow: false
-}, {
-	name: 'LU220',
-	jiage: '3771',
-	zhangfu: '0.45',
-	updown: true,
-	Swipeshow: false
-}, {
-	name: '豆粕2201',
-	jiage: '3190',
-	zhangfu: '0.16',
-	updown: false,
-	Swipeshow: false
-}, ]
+export const ListHQ = [
+		{
+			name: '豆二2201',
+			jiage: '4112',
+			zhangfu: '0.37',
+			updown: true,
+			Swipeshow: false
+		}, {
+			name: '国际铜2201',
+			jiage: '62230',
+			zhangfu: '0.91',
+			updown: false,
+			Swipeshow: false
+		}, {
+			name: '沥青2112',
+			jiage: '3156',
+			zhangfu: '0.13',
+			updown: true,
+			Swipeshow: false
+		}, {
+			name: '玉米2201',
+			jiage: '2677',
+			zhangfu: '0.41',
+			updown: false,
+			Swipeshow: false
+		}, {
+			name: '郑棉201',
+			jiage: '21780',
+			zhangfu: '0.25',
+			updown: true,
+			Swipeshow: false
+		}, {
+			name: '红枣201',
+			jiage: '16723',
+			zhangfu: '0.22',
+			updown: true,
+			Swipeshow: false
+		}, {
+			name: '淀粉2201',
+			jiage: '3201',
+			zhangfu: '1.02',
+			updown: false,
+			Swipeshow: false
+		}, {
+			name: '豆一2201',
+			jiage: '6399',
+			zhangfu: '0.3',
+			updown: true,
+			Swipeshow: false
+		}, {
+			name: '沪银2112',
+			jiage: '5136',
+			zhangfu: '0.66',
+			updown: true,
+			Swipeshow: false
+		}, {
+			name: '沪铝2201',
+			jiage: '18820',
+			zhangfu: '3.29',
+			updown: true,
+			Swipeshow: false
+		}, {
+			name: '苹果201',
+			jiage: '8093',
+			zhangfu: '0.61',
+			updown: true,
+			Swipeshow: false
+		}, {
+			name: '沪金2112',
+			jiage: '384.21',
+			zhangfu: '0.29',
+			updown: true,
+			Swipeshow: false
+		}, {
+			name: '沪铜2112',
+			jiage: '70162',
+			zhangfu: '0.78',
+			updown: false,
+			Swipeshow: false
+		}, {
+			name: '纤板2201',
+			jiage: '1351.22',
+			zhangfu: '1.22',
+			updown: true,
+			Swipeshow: false
+		}, {
+			name: '玻璃201',
+			jiage: '1718',
+			zhangfu: '0.17',
+			updown: false,
+			Swipeshow: false
+		}, {
+			name: '燃油2201',
+			jiage: '2981',
+			zhangfu: '0.11',
+			updown: true,
+			Swipeshow: false
+		}, {
+			name: '热卷2201',
+			jiage: '4409',
+			zhangfu: '1.20',
+			updown: false,
+			Swipeshow: false
+		}, {
+			name: '棉纱201',
+			jiage: '29876',
+			zhangfu: '1.78',
+			updown: false,
+			Swipeshow: false
+		}, {
+			name: 'EB2112',
+			jiage: '8718',
+			zhangfu: '0.45',
+			updown: true,
+			Swipeshow: false
+		}, {
+			name: '乙二醇2201',
+			jiage: '5267',
+			zhangfu: '0.26',
+			updown: true,
+			Swipeshow: false
+		}, {
+			name: '铁矿2201',
+			jiage: '562.88',
+			zhangfu: '0.26',
+			updown: true,
+			Swipeshow: false
+		}, {
+			name: '中证2111',
+			jiage: '7618.29',
+			zhangfu: '0.56',
+			updown: true,
+			Swipeshow: false
+		}, {
+			name: '沪深2111',
+			jiage: '4891.19',
+			zhangfu: '0.08',
+			updown: false,
+			Swipeshow: false
+		}, {
+			name: '上证2111',
+			jiage: '3223',
+			zhangfu: '0.06',
+			updown: true,
+			Swipeshow: false
+		}, {
+			name: '焦炭2201',
+			jiage: '2781',
+			zhangfu: '0.67',
+			updown: true,
+			Swipeshow: false
+		}, {
+			name: '鸡蛋2201',
+			jiage: '4590',
+			zhangfu: '0.51',
+			updown: true,
+			Swipeshow: false
+		}, {
+			name: '焦煤2201',
+			jiage: '1892',
+			zhangfu: '0.88',
+			updown: true,
+			Swipeshow: false
+		}, {
+			name: '塑料2201',
+			jiage: '8718',
+			zhangfu: '0.56',
+			updown: false,
+			Swipeshow: false
+		}, {
+			name: '生猪2201',
+			jiage: '16300',
+			zhangfu: '2.09',
+			updown: false,
+			Swipeshow: false
+		}, {
+			name: 'LU220',
+			jiage: '3771',
+			zhangfu: '0.45',
+			updown: true,
+			Swipeshow: false
+		}, {
+			name: '豆粕2201',
+			jiage: '3190',
+			zhangfu: '0.16',
+			updown: false,
+			Swipeshow: false
+		}
+]
 
 // Top3排行
-export const TOPTHDATA = [{
-	name: 'LU220',
-	jiage: '3190',
-	zhangfu: '10.00',
-	updown: true,
-	Swipeshow: false
-}, {
-	name: '焦煤2201',
-	jiage: '16300',
-	zhangfu: '9.89',
-	updown: true,
-	Swipeshow: false
-}, {
-	name: '鸡蛋2201',
-	jiage: '562.88',
-	zhangfu: '9.9',
-	updown: true,
-	Swipeshow: false
-}, {
-	name: '生猪2201',
-	jiage: '16300',
-	zhangfu: '9.92',
-	updown: false,
-	Swipeshow: false
-}, {
-	name: 'LU220',
-	jiage: '3771',
-	zhangfu: '8.99',
-	updown: true,
-	Swipeshow: false
-}, {
-	name: '豆粕2201',
-	jiage: '3190',
-	zhangfu: '8.98',
-	updown: false,
-	Swipeshow: false
-}]
+export const TOPTHDATA = [
+	{
+		name: '沪金2112',
+		jiage: '384.21',
+		zhangfu: '0.29',
+		updown: true,
+		Swipeshow: false
+	}, {
+		name: '沪铜2112',
+		jiage: '70162',
+		zhangfu: '0.78',
+		updown: false,
+		Swipeshow: false
+	}, {
+		name: '纤板2201',
+		jiage: '1351.22',
+		zhangfu: '1.22',
+		updown: true,
+		Swipeshow: false
+	}, {
+		name: '玻璃201',
+		jiage: '1718',
+		zhangfu: '0.17',
+		updown: false,
+		Swipeshow: false
+	}, {
+		name: '燃油2201',
+		jiage: '2981',
+		zhangfu: '0.11',
+		updown: true,
+		Swipeshow: false
+	}, {
+		name: '热卷2201',
+		jiage: '4409',
+		zhangfu: '1.20',
+		updown: false,
+		Swipeshow: false
+	}, {
+		name: '棉纱201',
+		jiage: '29876',
+		zhangfu: '1.78',
+		updown: false,
+		Swipeshow: false
+	}]
 // 新闻
-export const newsList = [{
+export const newsList = [
+	{
 		title: '粳米期货一周岁：产业多策略积极参与套保',
 		subTitle: '2021-04-15',
 		thumb: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AATtRmh.img',
