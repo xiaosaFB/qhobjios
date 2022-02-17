@@ -133,6 +133,7 @@
 		height: 100%;
 		left: 0;
 		top: 0;
+		z-index: 0;
 		background: linear-gradient(180deg, #10294F 18.22%, rgba(7, 39, 87, 0.9) 49.48%, rgba(3, 38, 90, 0.78) 63.02%, rgba(8, 58, 131, 0.49) 82.29%, rgba(0, 69, 172, 0) 100%);
 	}
 </style>

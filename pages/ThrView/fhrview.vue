@@ -51,7 +51,7 @@
 <script>
 	import {
 		newsList
-	} from '../FirstView/homePageDataTop.js';
+	} from '@/api/homePageDataTop.js';
 	export default {
 		data() {
 			return {

@@ -61,7 +61,7 @@
 
 <script>
 	
-	import { ListHQ } from '../FirstView/homePageDataTop.js';
+	import { ListHQ } from '@/api/homePageDataTop.js';
 	import CoinbaseItem from './coinbase-item.vue'
 	export default {
 		data() {
