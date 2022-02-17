@@ -1,6 +1,49 @@
 <template>
 	<view class="status_bar">
-		<view class="content">
+		<view class="content" :style="{backgroundImage:'linear-gradient(to bottom, rgba(31, 48, 83, 1.0), rgba(255,255,255,0))'}">
+			<!-- 通知 -->
+			
+			<!-- 动态加载echart -->
+			<view class="huashuview">
+				<view class="scrolllist">
+					<u-scroll-list @right="right" @left="left" :indicator="false">
+						<view class="scroll-list" style="flex-direction: row;">
+							<view
+									class="scroll-list__goods-item"
+									v-for="(item, index) in topthrdata"
+									:key="index"
+									@click="lengmen(index,item)"
+									 style="background-color: rgba(43,66,105,0.4);"
+							>
+								<view  :class="{active:touchindex==index}" style="width: 105px; height: 75px;display: flex;flex-direction: column;justify-content: center;align-items: center;border-radius: 3px;">
+									<text class="scroll-list__goods-item__text" style="color: #FFF;">{{ item.name }}</text>
+									<text class="scroll-list__goods-item__text" style="color: #FFF;">{{ item.jiage }}</text>
+									<text class="scroll-list__goods-item__text" style="color: red;">+{{ item.zhangfu }}%</text>
+								</view>
+								
+							</view>
+							<view class="scroll-list__show-more" @click="lengmenmore">
+								<text class="scroll-list__show-more__text">查看更多</text>
+							</view>
+						</view>
+					</u-scroll-list>
+				</view>
+				<qiun-data-charts
+				    type="candle"
+					 style="height: 300upx;" 
+				    :chartData="chartsDataCandle1"
+				    :loadingType="1"
+				    :errorShow="false"
+				    background="none"
+				    :animation="false"
+				    :tooltipShow="false"
+				    :tapLegend="false"
+				    :ontap="false"
+				    :ontouch="true"
+				    :onmouse="false"
+				  />
+			</view>
+			<!-- banner -->
 			
 		</view>
 	</view>
@@ -8,9 +51,17 @@
 
 <script>
 	import {TOPTHDATA, ListHQ, newsList} from './homePageDataTop.js'
+	import demodata from '@/mockdata/demodata.json';
+	import homedemodata from '@/mockdata/homedemodata.json';
+	
 export default {
 	data() {
 		return {
+			touchindex: 0,
+			chartsDataCandle1:{
+			  categories:[],
+			  series:[],
+			},
 			indicator: true,
 			filterList: false,
 			keyword: '',
@@ -186,25 +237,23 @@ export default {
 	},
 	created() {
 		this.newsListData = this.newsListdatas.slice(0, 5)
+		setTimeout(() => {
+			this.chartsDataCandle1=JSON.parse(JSON.stringify(homedemodata.Candle))
+		}, 1500);
 	},
 	methods: {
-		//官网复制的轮播
-		changeIndicatorDots(e) {
-			this.indicatorDots = !this.indicatorDots
-		},
-		changeAutoplay(e) {
-			this.autoplay = !this.autoplay
-		},
-		intervalChange(e) {
-			this.interval = e.target.value
-		},
-		durationChange(e) {
-			this.duration = e.target.value
-		},
-		lengmen(symbol) {
-			uni.navigateTo({
-				url: '/pages/SecView/lineDetail?item='+ encodeURIComponent(JSON.stringify(symbol))
-			})
+		lengmen(index,item) {
+			this.touchindex = index
+			if (index % 2 == 1) {
+				setTimeout(() => {
+					this.chartsDataCandle1=JSON.parse(JSON.stringify(demodata.Candle))
+				}, 100);
+			} else {
+				setTimeout(() => {
+					this.chartsDataCandle1=JSON.parse(JSON.stringify(homedemodata.Candle))
+				}, 100);
+			}
+			
 		},
 		lengmenmore() {
 			uni.navigateTo({
@@ -297,7 +346,59 @@ export default {
 		padding-bottom: env(safe-area-inset-bottom);  
 		overflow: hidden;
 		min-height: 100vh;
-
+		.huashuview {
+			margin: 10px 15px;
+			min-height: 200px;
+			border-radius: 10px ;
+			background-color: rgba(253,246,236,0.1);
+			.scrolllist {
+				margin: 0 5px;
+				.scroll-list {
+					
+					@include flex(column);
+					&__goods-item {
+						.active {
+							// border: 1px solid #2694ff;
+							background-color: #13477F; // #0071DE
+						}
+						margin-top: 17px;
+						margin-right: 20px;
+						position: relative;
+						&__image {
+							position: absolute;
+							top: 0px;
+							right: 0px;
+							width: 28px;
+							height: 28px;
+						}
+				
+						&__text {
+							color: #333;
+							text-align: center;
+							font-size: 12px;
+							margin-top: 5px;
+						}
+					}
+				
+					&__show-more {
+						margin-top: 17px;
+						width: 105px;
+						background-color: rgba(43,66,105,0.4);
+						// border-radius: 3px;
+						// padding: 3px 6px;
+						@include flex(column);
+						align-items: center;
+						justify-content: center;
+						&__text {
+							font-size: 12px;
+							// width: 12px;
+							color: #fff;
+							line-height: 16px;
+						}
+					}
+				}
+			}
+		}
 	}
 	.status_bar {
 	  height: var(--status-bar-height);

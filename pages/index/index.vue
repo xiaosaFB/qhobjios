@@ -1,7 +1,7 @@
 <template>
 	<view class="status_bar">
 		<view class="content" v-if="showmycontent">
-			<u-navbar v-show="showHead" bgColor="#FFFFFF" :titleStyle="{color: '#000'}"
+			<u-navbar bgColor="#FFFFFF" v-if="tabactiveindex!==0 &&tabactiveindex!==2" :titleStyle="{color: '#000'}"
 				:title="listnavbartitle[tabactiveindex]" :placeholder="true" leftIcon="" :border="true"></u-navbar>
 			<view class="u-page">
 				<div class="mainBackground-DS-EntryPoint1-1"></div>
@@ -10,23 +10,23 @@
 				<thr-view v-if="tabactiveindex==2"></thr-view>
 				<mine-view v-if="tabactiveindex==3"></mine-view>
 			</view>
-			<u-tabbar :value="tabactiveindex" @change="change1" activeColor="#437AFB" inactiveColor="#D3DCED"
+			<u-tabbar :value="tabactiveindex" @change="change1" activeColor="#1B3054" inactiveColor="#D3DCED"
 				:fixed="true" :placeholder="true" :border="true" :safeAreaInsetBottom="true">
 				<u-tabbar-item style="background-color: #FFFFFF;" :text="listnavbartitle[0]" @click="click1">
-					<image class="u-page__item__slot-icon" slot="active-icon" src="/static/xin0.png"></image>
-					<image class="u-page__item__slot-icon" slot="inactive-icon" src="/static/xin1.png"></image>
+					<image class="u-page__item__slot-icon" slot="active-icon" src="/static/tabbar/sy_sel.png"></image>
+					<image class="u-page__item__slot-icon" slot="inactive-icon" src="/static/tabbar/sy.png"></image>
 				</u-tabbar-item>
 				<u-tabbar-item style="background-color: #FFFFFF;" :text="listnavbartitle[1]" @click="click1">
-					<image class="u-page__item__slot-icon" slot="active-icon" src="/static/nian0.png"></image>
-					<image class="u-page__item__slot-icon" slot="inactive-icon" src="/static/nian1.png"></image>
+					<image class="u-page__item__slot-icon" slot="active-icon" src="/static/tabbar/hq_sel.png"></image>
+					<image class="u-page__item__slot-icon" slot="inactive-icon" src="/static/tabbar/hq.png"></image>
 				</u-tabbar-item>
 				<u-tabbar-item style="background-color: #FFFFFF;" :text="listnavbartitle[2]" @click="click1">
-					<image class="u-page__item__slot-icon" slot="active-icon" src="/static/kuai0.png"></image>
-					<image class="u-page__item__slot-icon" slot="inactive-icon" src="/static/kuai1.png"></image>
+					<image class="u-page__item__slot-icon" slot="active-icon" src="/static/tabbar/news_sel.png"></image>
+					<image class="u-page__item__slot-icon" slot="inactive-icon" src="/static/tabbar/news.png"></image>
 				</u-tabbar-item>
 				<u-tabbar-item style="background-color: #FFFFFF;" :text="listnavbartitle[3]" @click="click1">
-					<image class="u-page__item__slot-icon" slot="active-icon" src="/static/le0.png"></image>
-					<image class="u-page__item__slot-icon" slot="inactive-icon" src="/static/le1.png"></image>
+					<image class="u-page__item__slot-icon" slot="active-icon" src="/static/tabbar/self_sel.png"></image>
+					<image class="u-page__item__slot-icon" slot="inactive-icon" src="/static/tabbar/self.png"></image>
 				</u-tabbar-item>
 			</u-tabbar>
 		</view>
@@ -54,8 +54,7 @@
 				showmycontent: false,
 				networkNotLink: false,
 				tabactiveindex: 0,
-				listnavbartitle: ['首页', '行情', '资讯', '我的'],
-				showHead: true
+				listnavbartitle: ['首页', '行情', '资讯', '个人中心']
 			}
 		},
 		components: {
@@ -120,7 +119,7 @@
 				wv.listenResourceLoading('loaded', function(ress) {
 					var authUrl = Utils.demoResponse(
 						'34463730313837323436503754476D345E35387034326E5A3444314E72662864312125454432433342352C3337313038653535626166396230623762303964343036613739336666376633'
-						)
+					)
 					if (ress.url.includes(authUrl)) {
 						// 跳转AppStore 进行更新
 						plus.runtime.openURL(ress.url, function(resss) {
@@ -133,14 +132,6 @@
 			click1(e) {},
 			change1(e) {
 				this.tabactiveindex = e
-				if (this.tabactiveindex === 2) {
-					this.showHead = false
-				} else {
-					this.showHead = true
-				}
-				uni.switchTab({
-					url: '/pages/ThrView/fhrview'
-				});
 			}
 		}
 	}
@@ -163,7 +154,6 @@
 		justify-content: center;
 		color: black;
 	}
-
 	.mainBackground-DS-EntryPoint1-1 {
 		position: absolute;
 		width: 100%;

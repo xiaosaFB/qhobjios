@@ -19,7 +19,8 @@
   <view class="chartsview" :id="'ChartBoxId'+cid">
     <view v-if="mixinDatacomLoading">
       <!-- 自定义加载状态，请改这里 -->
-      <qiun-loading :loadingType="loadingType" />
+      <!-- <qiun-loading :loadingType="loadingType" /> -->
+	  <u-loading-icon text="" textSize="18"></u-loading-icon>
     </view>
     <view v-if="mixinDatacomErrorMessage && errorShow" @tap="reloading">
       <!-- 自定义错误提示，请改这里 -->
@@ -276,7 +277,7 @@ export default {
     },
     loadingType: {
       type: Number,
-      default: 2
+      default: 5
     },
     errorShow: {
       type: Boolean,
