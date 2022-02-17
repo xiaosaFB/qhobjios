@@ -2,8 +2,7 @@
 	<view class="content">
 		<u-tabs :list="list1" @click="click"></u-tabs>
 		<view :v-if="showIndex===0" class="tab-0">
-			<u-empty mode="coupon" icon="http://cdn.uviewui.com/uview/empty/coupon.png"
-				text="快来建立自选名单" textSize="16">
+			<u-empty mode="coupon" icon="http://cdn.uviewui.com/uview/empty/coupon.png" text="快来建立自选名单" textSize="16">
 			</u-empty>
 			<u-button style="width: 120px;margin-top: 20px;" text="前往登录" @click="BindGetUserInfo()"
 				color="linear-gradient(to right, rgb(66, 83, 216), rgb(213, 51, 186))"></u-button>
@@ -15,7 +14,8 @@
 <script>
 	import {
 		ListHQ
-	} from '../FirstView/homePageDataTop.js';
+	} from '@/api/homePageDataTop.js';
+	import CoinbaseItem from './coinbase-item.vue'
 	export default {
 		data() {
 			return {
@@ -60,7 +60,7 @@
 </script>
 
 <style lang="scss" scoped>
-	.content{
+	.content {
 		position: relative;
 		background: #FFF;
 		box-shadow: 0px 0px 0.8px rgba(0, 0, 0, 0.13), 0px 2px 10px rgba(0, 0, 0, 0.08);
@@ -73,7 +73,8 @@
 		height: 85vh;
 		overflow: hidden;
 	}
-.u-empty__text{
-	color: #fff;
-}
+
+	.u-empty__text {
+		color: #fff;
+	}
 </style>
