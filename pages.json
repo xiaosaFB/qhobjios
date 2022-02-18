@@ -22,6 +22,19 @@
 			"path": "pages/ThrView/fhrview",
 			"style": { "navigationBarTitleText": "更多资讯"}
 		},
+		
+		{
+			"path": "pages/MineView/ChangePassword",
+			"style": { "navigationBarTitleText": "修改密码"}
+		},
+		{
+			"path": "pages/MineView/FeedbackView",
+			"style": { "navigationBarTitleText": "反馈"}
+		},
+		{
+			"path": "pages/MineView/BaseSettings",
+			"style": { "navigationBarTitleText": "设置中心"}
+		},
 		{
 			"path": "pages/FirstView/HomeNewsList",
 			"style": { "navigationBarTitleText": "Banner板块"}

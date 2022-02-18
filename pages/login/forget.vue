@@ -129,18 +129,18 @@
 				if (this.phone.length != 11) {
 					uni.showToast({
 						icon: 'none',
-						title: '手机号不正确'
+						title: '请检查手机号'
 					});
 					return;
 				}
 				if (this.password.length < 6) {
 					uni.showToast({
 						icon: 'none',
-						title: '密码不正确'
+						title: '密码不能低于6位数'
 					});
 					return;
 				}
-				if (this.code.length != 4) {
+				if (this.code.length != 10) {
 					uni.showToast({
 						icon: 'none',
 						title: '验证码不正确'

@@ -3,7 +3,9 @@
 		onLaunch: function() {
 			uni.hideTabBar()
 			// 固定屏幕
+			// #ifdef APP-PLUS
 			plus.screen.lockOrientation('portrait-primary');
+			// #endif
 		},
 		onShow: function() {
 			
