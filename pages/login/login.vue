@@ -1,180 +1,222 @@
 <template>
-  <view class="content">
-	 
-    <view class="header">
-      <!-- <image src="../../static/shilu-login/logo.png"></image> -->
-    </view>
-
-    <view class="list">
-		 <text style="color: #FFFFFF;font-size: 53upx;">欢迎登录</text>
-      <view class="list-call">
-        <image class="img" src="/static/shilu-login/1.png"></image>
-        <input class="sl-input" v-model="phone" type="number" maxlength="11" placeholder="输入手机号" />
+  <view class="Loginpage">
+    <view class="top-background-raduis"> </view>
+    <view class="login-box">
+      <view class="login-card-title">
+        <view class="login-card-title-content"> 账号密码登录 </view>
       </view>
-      <view class="list-call">
-        <image class="img" src="/static/shilu-login/2.png"></image>
-        <input class="sl-input" v-model="password" type="text" maxlength="32" placeholder="输入密码" password="true" />
+      <view class="login-card-input">
+        <!-- 输入框头部图标 -->
+        <uni-easyinput
+          class="hj-input"
+          v-model="phone"
+          focus
+          maxlength="30"
+          :trim="true"
+          @focus="UserNamePassWrodFocusBorderStyle"
+          :styles="inputColorConfigToUserName"
+          @blur="UserNamePassWrodBlurBorderStyle"
+          placeholder="请输入账号"
+        ></uni-easyinput>
+        <!-- 输入框头部图标 -->
+        <uni-easyinput
+          class="hj-input"
+          v-model="password"
+          type="password"
+          @focus="PassWordFocusBorderStyle"
+          @blur="PassWordBlurBorderStyle"
+          :styles="inputColorConfigToPassWord"
+          placeholder="请输入密码"
+        ></uni-easyinput>
       </view>
-
+      <view class="login-card-loginIn">
+        <view class="login-card-loginIn-btn" @click="bindLogin">
+          登 录
+        </view>
+      </view>
+       <view class="login-bottom-info">
+		 <navigator url="forget" open-type="navigate">忘记密码</navigator>
+		 <navigator url="reg" open-type="navigate">注册</navigator>
+       </view>
     </view>
-
-    
-
-    <view class="agreenment">
-      <navigator url="forget" open-type="navigate">忘记密码</navigator>
-      <text>|</text>
-      <navigator url="reg" open-type="navigate">注册账户</navigator>
-    </view>
-	<view class="button-login" hover-class="button-hover" @tap="bindLogin()">
-	  <text>登录</text>
-	</view>
+	 <!-- <view class="top-background-raduis1"> </view> -->
   </view>
 </template>
 
+ 
 <script>
-  export default {
-    data() {
-      return {
-        phone: '',
-        password: ''
-      };
+//import {  } from "@/common/api/{$}.js";
+export default {
+  data() {
+    return {
+      // 输入框边框颜色默认值
+      colorDefault:'#b4b4b4',
+      // 输入框边框聚焦值
+      colorFocusColor:'#3cb79a',
+      // 输入框颜色配置
+      inputColorConfigToUserName: {
+        color: "#000000",
+        disableColor: "#eee",
+        borderColor: "#b4b4b4",
+      },
+      // 输入框颜色配置
+      inputColorConfigToPassWord: {
+        color: "#000000",
+        disableColor: "#eee",
+        borderColor: "#b4b4b4",
+      },
+      value: "",
+	  phone: '',
+	  password: ''
+    };
+  },
+  //监听页面初始化，其参数同 onLoad 参数，为上个页面传递的数据，参数类型为 Object（用于页面传参），触发时机早于 onLoad
+  onInit() {},
+  //监听页面加载，其参数为上个页面传递的数据，参数类型为 Object（用于页面传参）
+  onLoad() {},
+  //监听页面初次渲染完成。注意如果渲染速度快，会在页面进入动画完成前触发
+  onReady() {},
+  //监听页面显示。页面每次出现在屏幕上都触发，包括从下级页面点返回露出当前页面
+  beforeDestroy() {},
+  //页面滚动到底部的事件（不是scroll-view滚到底），常用于下拉下一页数据。
+  onReachBottom() {},
+  onShareAppMessage() {},
+  created() {},
+  methods: {
+	  bindLogin() {
+	  	if (this.phone.length != 11) {
+	  		uni.showToast({
+	  			icon: 'none',
+	  			title: '手机号不正确'
+	  		});
+	  		return;
+	  	} else if (this.password.length < 6) {
+	  		uni.showToast({
+	  			icon: 'none',
+	  			title: '密码不正确'
+	  		});
+	  		return;
+	  	} else if (this.phone != '18005515555' || this.password != '123456') {
+	  		uni.showToast({
+	  			icon: 'none',
+	  			title: '请仔细检查账号密码是否正确'
+	  		});
+	  		return;
+	  	} else if (this.phone == '18005515555' || this.password == '123456') {
+	  		uni.setStorageSync('login_key', 1)
+	  		//成功后的逻辑
+	  		// uni.navigateBack();
+	  		uni.reLaunch({
+	  			url: '../index/index?index=0'
+	  		});
+	  	}
+	  },
+    // 输入框聚焦变换边框样式
+    UserNamePassWrodFocusBorderStyle(){
+      this.inputColorConfigToUserName.borderColor
+      = this.colorFocusColor;
     },
-    methods: {
-      bindLogin() {
-		  if (this.phone.length != 11) {
-			  uni.showToast({
-				icon: 'none',
-				title: '手机号不正确'
-			  });
-			return;
-		} else if(this.password.length < 6) {
-			  uni.showToast({
-				icon: 'none',
-				title: '密码不正确'
-			  });
-			  return;
-		} else if (this.phone != '16612344321' || this.password != '123456') {
-			uni.showToast({
-				icon: 'none',
-				title: '请仔细检查账号密码是否正确'
-			});
-			return;
-		} else if(this.phone == '16612344321' || this.password == '123456'){
-			uni.setStorageSync('login_key',1)
-			//成功后的逻辑
-			// uni.navigateBack();
-			uni.reLaunch({
-			    url: '../index/index?index=0'
-			});
-		}
-      }
+    PassWordFocusBorderStyle(){
+      this.inputColorConfigToPassWord.borderColor
+      = this.colorFocusColor;
+    },
+    // 输入框失去焦点变换边框样式
+    UserNamePassWrodBlurBorderStyle(){
+      this.inputColorConfigToUserName.borderColor
+      = this.colorDefault;
+    },
+    PassWordBlurBorderStyle(){
+      this.inputColorConfigToPassWord.borderColor
+      = this.colorDefault;
+    },
+
+  },
+};
+</script>
+<style lang="scss" scoped>
+* {
+  box-sizing: border-box;
+}
+.Loginpage {
+  position: relative;
+  height: 100vh;
+}
+.top-background-raduis {
+  height: 40%;
+  // background-color: #d8d8d8;
+  background: linear-gradient(180deg, #10294F 18.22%, rgba(7, 39, 87, 0.9) 49.48%, rgba(3, 38, 90, 0.78) 63.02%, rgba(8, 58, 131, 0.49) 82.29%, rgba(0, 69, 172, 0) 100%);
+  
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+ 
+/deep/ .is-input-border{
+  border-radius: 7px !important;
+}
+/deep/ .uni-easyinput__content{
+  min-height: 39px !important;
+}
+.hj-input {
+  margin-top: 15rpx;
+}
+.hj-input:nth-child(2) {
+  margin-top: 35rpx;
+}
+.login-box {
+  top: 20%;
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  right: 10%;
+  height: 650rpx;
+  padding: 30rpx;
+  background-color: white;
+  border-radius: 40rpx;
+  box-shadow: 9px 9px 6px #e3e3e3;
+  z-index: 1;
+  .login-card-input {
+    // background-color: violet;
+    height: 50%;
+    padding: 5rpx;
+  }
+  .login-card-title {
+    height: 20%;
+    // background-color: black;
+    padding: 10rpx;
+    display: flex;
+    justify-content: center;
+    .login-card-title-content {
+      font-size: 1.2em;
+      color: rgba(7, 39, 87, 0.9);
+      border-bottom: 3px solid rgba(7, 39, 87, 0.9);
     }
   }
-</script>
-
-<style scoped>
-	page {
-		background-color: #CE161A;
-	}
-  .content {
+  .login-card-loginIn{
+    height: 25%;
     display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 100vh;
-        position: relative;
+    justify-content: center;
+    padding: 10rpx;
+    align-items: center;
+    .login-card-loginIn-btn{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(90deg, #10294F 18.22%, rgba(7, 39, 87, 0.9) 49.48%, rgba(3, 38, 90, 0.78) 63.02%, rgba(8, 58, 131, 0.49) 82.29%, rgba(0, 69, 172, 0.3) 100%);
+      
+      width: 100%;
+      font-size: 1.2em;
+      height: 80%;
+      border-radius: 40rpx;
+      color: white;
+    }
   }
-
-  .header {
-    /*background: rgba(0, 85, 255, 1.0); */
-	/* border-radius: 50%; */
-	position: absolute;
-	bottom: 7px;
-	/* top: 9px; */
-	z-index: 0;
-	left: 0;
-	right: 0;
-	background: url(/static/newapplogo.png) no-repeat fixed bottom center;
-	background-size: 100% 50%;
-	height: 50%;
-  }
-
-  .header image {
-    /* width: 281rpx; */
-    /* height: 281rpx; */
-    /* border-radius: 50%; */
-  }
-
-  .list {
+  .login-bottom-info{
+    height: 5%;
     display: flex;
-        flex-direction: column;
-        margin-top: -300px;
-        padding-left: 11px;
-        padding-right: 11px;
-  }
-
-  .list-call {
-    display: flex;
-    flex-direction: row;
+    font-size: 0.7em;
+    color: rgba(7, 39, 87, 0.9);
     justify-content: space-between;
-    align-items: center;
-    height: 100rpx;
-    color: #333333;
-    border-bottom: 0.5px solid #333333;
-	z-index: 1;
   }
+}
 
-  .list-call .img {
-    width: 40rpx;
-    height: 40rpx;
-  }
-
-  .list-call .sl-input {
-    flex: 1;
-    text-align: left;
-    font-size: 32rpx;
-    margin-left: 16rpx;
-  }
-
-  .button-login {
-    position: absolute;
-        right: 0;
-        left: 0;
-        color: #FFFFFF;
-        font-size: 18px;
-        width: 80%;
-        height: 55px;
-        background: linear-gradient(-200deg, rgba(255, 255, 0, 1.0), rgba(170, 0, 0, 0.3));
-        box-shadow: 0px 0px 7px 0px rgb(164 217 228 / 20%);
-        border-radius: 27px;
-        line-height: 55px;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        /* margin-top: 138px;*/
-  }
-
-  .button-hover {
-    background: linear-gradient(-200deg, rgba(255, 255, 0, 1.0), rgba(170, 0, 0, 0.3));
-  }
-
-  .agreenment {
-	  z-index: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    align-items: center;
-    font-size: 30rpx;
-    margin-top: 80rpx;
-	margin-right: 20rpx;
-    color: #0055ff;
-    text-align: center;
-    height: 40rpx;
-    line-height: 40rpx;
-  }
-
-  .agreenment text {
-    font-size: 24rpx;
-    margin-left: 15rpx;
-    margin-right: 15rpx;
-  }
 </style>

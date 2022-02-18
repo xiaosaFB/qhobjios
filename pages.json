@@ -55,19 +55,15 @@
 		
 		{
 			"path": "pages/login/login",
-			"style": { "navigationBarTitleText": "", "navigationBarBackgroundColor":"#FFFFFF" }
+			"style": { "navigationBarTitleText": "", "navigationBarBackgroundColor":"#10294F" , "navigationBarTextStyle":"white"}
 		},
 		{
 			"path": "pages/login/reg",
-			"style": { "navigationBarTitleText": "","navigationBarBackgroundColor":"#FFFFFF"}
+			"style": { "navigationBarTitleText": "","navigationBarBackgroundColor":"#10294F" , "navigationBarTextStyle":"white"}
 		},
 		{
 			"path": "pages/login/forget",
-			"style": { "navigationBarTitleText": "忘记密码","navigationBarBackgroundColor":"#FFFFFF"}
-		},
-		{
-			"path": "pages/login/agreement",
-			"style": { "navigationBarTitleText": "用户协议" }
+			"style": { "navigationBarTitleText": "","navigationBarBackgroundColor":"#10294F" , "navigationBarTextStyle":"white"}
 		}
 	],
 	"globalStyle": {
