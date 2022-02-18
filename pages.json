@@ -23,6 +23,11 @@
 			"style": { "navigationBarTitleText": "更多资讯"}
 		},
 		{
+			"path": "pages/FirstView/HomeNewsList",
+			"style": { "navigationBarTitleText": "Banner板块"}
+		},
+		
+		{
 			"path": "pages/MineView/mineview"
 		},
 		{
