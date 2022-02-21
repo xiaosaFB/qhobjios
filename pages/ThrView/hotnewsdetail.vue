@@ -1,6 +1,6 @@
 <template>
 	<view class="contentpage" style="padding: 30rpx;">
-		<h4 style="margin-bottom: 50rpx;">{{item.title}}</h4>
+		<h4 style="margin-bottom: 50rpx">{{item.title}}</h4>
 		<u-parse :content="item.html" :show-with-animation="true" :selectable="true"></u-parse>
 	</view>
 </template>
@@ -31,8 +31,7 @@
 </script>
 
 <style lang="scss" scoped>
-	.contentpage {    
-		text-align: left;
-		text-indent: 30px;
+	.contentpage {
+		text-align: center;
 	}
 </style>

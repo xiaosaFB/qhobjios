@@ -120,15 +120,16 @@
 	export default {
 		data() {
 			return {
-				loginState: uni.getStorageSync('login_key'),
 				list1: [{
 					name: '自选',
 				}, {
-					name: '贵金属',
+					name: '农产品',
 				}, {
-					name: '国内',
+					name: '金属'
 				}, {
-					name: '能源化工'
+					name: '黑色系'
+				}, {
+					name: '期货'
 				}],
 				showIndex: 0,
 				chartsDataCandle2: {

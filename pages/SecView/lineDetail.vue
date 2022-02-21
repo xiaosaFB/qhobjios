@@ -4,7 +4,7 @@
 		<view class="basicInformation">
 			<qiun-data-charts
 			    type="candle"
-				 style="height: 200px;" 
+				style="height: 200px;" 
 			    :chartData="chartsDataCandle1"
 			    :loadingType="1"
 			    :errorShow="false"
@@ -16,14 +16,26 @@
 			    :ontouch="true"
 			    :onmouse="false"
 			  />
-			  <view class="login-card-loginIn">
-			  	 <button class="login-card-loginIn-btn" style="width: 100%;" @click="tianjiazixuan" type="default">{{buttonstatus==1?'加入我的自选':'取消自选'}}</button>
-			  </view>
-			 
-			  <u-toast ref="uToast"></u-toast>
+			  
 		</view>
 		<!-- echart -->
-		
+		<view class="basicInformation">
+			<view style="width: 100%;">
+				<text class="name">名称：</text>
+				<text class="name">{{name}}</text>
+			</view>	
+			<view class="boolviewcss">
+				价格
+				<text :class="(zhangdiefu.split('-').length==1)?'redcolor':'greencolor'" style="padding-right: 20rpx;">￥{{jiage}}</text>
+			</view>
+			<view class="boolviewcss">
+				涨幅
+				<text :class="(zhangdiefu.split('-').length==1)?'redcolor':'greencolor'">{{zhangdiefu}}%</text>
+			</view>
+			<view class="login-card-loginIn">
+				 <button class="login-card-loginIn-btn" style="width: 100%;" @click="tianjiazixuan" type="default">{{buttonstatus==1?'加入我的自选':'取消自选'}}</button>
+			</view>
+		</view>
 		<!-- 个人看法 -->
 		
 		
@@ -66,6 +78,7 @@
 		  <button class="boolviewcss" style="width: 100%;" @click="tianjiazixuan" type="default">{{buttonstatus==1?'加入我的自选':'取消自选'}}</button>
 		<u-toast ref="uToast"></u-toast>
 		-->
+		<u-toast ref="uToast"></u-toast>
 	</view>
 </template>
 
@@ -164,6 +177,10 @@
 		top: 0;
 		background: linear-gradient(180deg, #10294F 18.22%, rgba(7, 39, 87, 0.9) 49.48%, rgba(3, 38, 90, 0.78) 63.02%, rgba(8, 58, 131, 0.49) 82.29%, rgba(0, 69, 172, 0) 100%);
 		.basicInformation {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
 			margin: 10px 15px;
 			min-height: 200px;
 			border-radius: 10px;
@@ -187,6 +204,12 @@
 		    border-radius: 40rpx;
 		    color: white;
 		  }
+		}
+		.boolviewcss {
+			margin: 15px;
+			border-radius: 10px;
+			padding: 5px;
+			background-color: rgba($color: #000000, $alpha: 0.2);
 		}
 		.name {
 			font-size: 18px;
