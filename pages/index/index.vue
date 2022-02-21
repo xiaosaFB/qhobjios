@@ -6,7 +6,7 @@
 			<view class="u-page">
 				<div class="mainBackground-DS-EntryPoint1-1"></div>
 				<first-view v-if="bottomButtonSelection==0" :myfirstzx="myzx"></first-view>
-				<sec-view v-if="bottomButtonSelection==1"></sec-view>
+				<sec-view v-if="bottomButtonSelection==1" :myfirstzx="myzx"></sec-view>
 				<thr-view v-if="bottomButtonSelection==2"></thr-view>
 				<mine-view v-if="bottomButtonSelection==3"></mine-view>
 			</view>
