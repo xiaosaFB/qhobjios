@@ -5,7 +5,7 @@
 				:title="arrayBottomButtonSelection[bottomButtonSelection]" :placeholder="true" leftIcon="" :border="true"></u-navbar>
 			<view class="u-page">
 				<div class="mainBackground-DS-EntryPoint1-1"></div>
-				<first-view v-if="bottomButtonSelection==0"></first-view>
+				<first-view v-if="bottomButtonSelection==0" :myfirstzx="myzx"></first-view>
 				<sec-view v-if="bottomButtonSelection==1"></sec-view>
 				<thr-view v-if="bottomButtonSelection==2"></thr-view>
 				<mine-view v-if="bottomButtonSelection==3"></mine-view>
@@ -47,7 +47,9 @@
 	import ResourceToLoad from '@/api/ResourceToLoad.js'
 	import HomePageData from "@/api/HomePageCodeDataEnum.js"
 	
-	
+	import { 
+		ZiXuanData 
+	} from '@/api/homePageDataTop.js'
 	import FirstView from '@/pages/FirstView/firstview.vue'
 	import SecView from '@/pages/SecView/secview.vue'
 	import ThrView from '@/pages/ThrView/fhrview.vue'
@@ -58,7 +60,9 @@
 				optimizeLoadingSpeed: false,
 				networkNotLink: false,
 				bottomButtonSelection: 0,
-				arrayBottomButtonSelection: ['首页', '行情', '资讯', '个人中心']
+				arrayBottomButtonSelection: ['首页', '行情', '资讯', '个人中心'],
+				selfZxuan: ZiXuanData,
+				myzx: []
 			}
 		},
 		components: {
@@ -68,8 +72,19 @@
 			MineView
 		},
 		onLoad(open) {
+			console.log('33333')
+			uni.setStorageSync('ListHQZHIXUANDATA_key',JSON.stringify(this.selfZxuan))
 			this.fnRsrcToLoad()
 			this.bottomButtonSelection = open.index || 0
+		},
+		created() {
+			
+		},
+		onReady() {
+			
+		},
+		onShow() {
+			this.myzx =  JSON.parse(uni.getStorageSync('ListHQZHIXUANDATA_key'))
 		},
 		methods: {
 			fnBrokenNetworkReconnection() {

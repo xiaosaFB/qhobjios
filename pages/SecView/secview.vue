@@ -1,13 +1,14 @@
 <template>
 	<view class="content">
 		<u-tabs :list="list1" @click="click"></u-tabs>
-		<view :v-if="showIndex===0" class="tab-0">
+		<view v-if="showIndex===0" class="tab-0">
 			<u-empty mode="coupon" icon="http://cdn.uviewui.com/uview/empty/coupon.png" text="快来建立自选名单" textSize="16">
 			</u-empty>
-			<u-button style="width: 120px;margin-top: 20px;" text="前往登录" @click="BindGetUserInfo()"
-				color="linear-gradient(to right, rgb(66, 83, 216), rgb(213, 51, 186))"></u-button>
+			<u-button v-if="loginState !== 1" style="width: 120px;margin-top: 20px;" text="前往登录"
+				@click="BindGetUserInfo()" color="linear-gradient(to right, rgb(66, 83, 216), rgb(213, 51, 186))">
+			</u-button>
 		</view>
-		<view :v-if="showIndex===1" class="tab-1"></view>
+		<view v-else class="tab-1"></view>
 	</view>
 </template>
 
@@ -19,16 +20,15 @@
 	export default {
 		data() {
 			return {
+				loginState: uni.getStorageSync('login_key'),
 				list1: [{
 					name: '自选',
 				}, {
-					name: '农产品',
+					name: '贵金属',
 				}, {
-					name: '金属'
+					name: '国内',
 				}, {
-					name: '黑色系'
-				}, {
-					name: '期货'
+					name: '能源化工'
 				}],
 				showIndex: 0
 			};
@@ -37,7 +37,9 @@
 
 		},
 		components: {},
-		created() {},
+		created() {
+			this.loginState = uni.getStorageSync('login_key')
+		},
 		onLoad() {
 
 		},

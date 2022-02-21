@@ -16,7 +16,8 @@
 			}
 		},
 		{
-			"path": "pages/SecView/secview"
+			"path": "pages/SecView/secview",
+			"style": { "navigationBarTitleText": "更多行情"}
 		},
 		{
 			"path": "pages/ThrView/fhrview",
