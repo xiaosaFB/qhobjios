@@ -37,7 +37,7 @@
 			"style": { "navigationBarTitleText": "设置中心"}
 		},
 		{
-			"path": "pages/FirstView/HomeNewsList",
+			"path": "pages/FirstView/HomeBannerNewsList",
 			"style": { "navigationBarTitleText": "Banner板块"}
 		},
 		
