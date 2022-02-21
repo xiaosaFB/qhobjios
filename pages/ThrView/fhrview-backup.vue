@@ -84,7 +84,7 @@
 </template>
 
 <script>
-	import {newsList} from '../FirstView/homePageDataTop.js'
+	import {newsList} from '../../api/homePageDataTop.js'
 	export default {
 		data() {
 			return {

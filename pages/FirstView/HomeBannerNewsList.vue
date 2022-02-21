@@ -32,11 +32,13 @@
 		created() {
 
 		},
-		methods: {jumpDetail(item) {
+		methods: {
+			jumpDetail(item) {
 				uni.navigateTo({
 					url: '/pages/ThrView/hotnewsdetail?item=' + encodeURIComponent(JSON.stringify(item))
 				});
-			},},
+			},
+		},
 	}
 </script>
 

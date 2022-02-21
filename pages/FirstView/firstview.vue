@@ -137,14 +137,14 @@
 			<view class="zixuan">
 				<view class="" v-if="loginState == 1">
 					<text style="color: #FFF;">自选列表</text>
-					<u-collapse accordion :value="2">
-						<view v-for="(item,index) in selfZxuan" :key="index">
+					<u-collapse accordion :value="2" v-if="myfirstzx.length!==0">
+						<view v-for="(item,index) in myfirstzx" :key="index">
 							<u-collapse-item :name="index">
 								<text slot="title" class="u-page__item__title__slot-title">{{item.name}}</text>
 								<text slot="value" class="u-page__item__title__slot-title">价格：{{item.jiage}}</text>
 								<text slot="value" class="u-page__item__title__slot-title"
 									:class="[parseFloat(item.updown?1:-1) >= 0 ? 'up' : 'down']">涨幅：{{item.zhangfu}}%</text>
-								<view class="u-collapse-content">
+								<view class="u-collapse-content" @click="jumpmydetailpage(item)">
 									<qiun-data-charts type="candle" style="height: 148upx;"
 										:chartData="chartsDataCandle2" :loadingType="1" :errorShow="false"
 										background="none" :animation="false" :tooltipShow="false" :tapLegend="false"
@@ -153,6 +153,10 @@
 							</u-collapse-item>
 						</view>
 					</u-collapse>
+					<view class="" v-else @click="moreMarket">
+						<u-empty text="自选列表空空如也,点我 快去自选吧" icon="../../static/logNO.png">
+						</u-empty>
+					</view>
 				</view>
 				<view class="" v-else @click="jumpLog">
 					<text style="color: #FFF;">自选列表</text>
@@ -207,11 +211,10 @@
 					categories: [],
 					series: [],
 				},
-				selfZxuan: ZiXuanData,
+				// selfZxuan: [],
 				indicator: true,
 				filterList: false,
 				keyword: '',
-				loginState: uni.getStorageSync('login_key'),
 				curNow: 0,
 				newsListData: qihuonewslist.slice(0, 5), //资讯data
 				indexList: ListHQ.slice(3, 11), // 期货data
@@ -225,14 +228,24 @@
 				duration: 500
 			}
 		},
-		onLoad() {},
+		props: {
+		  myfirstzx: {
+		    type: Array,
+		    default: []
+		  }
+		},
+		onReady() {
+			
+		},
+		onLoad() {
+			
+		},
 		onShow() {
-
 			this.loginState = uni.getStorageSync('login_key')
+			
 		},
 		created() {
 			this.loginState = uni.getStorageSync('login_key')
-			console.log('123123123', this.loginState) 
 			setTimeout(() => {
 				this.chartsDataCandle1 = JSON.parse(JSON.stringify(homedemodata.Candle))
 				this.chartsDataCandle2 = JSON.parse(JSON.stringify(demodata.Candle))
@@ -254,7 +267,7 @@
 			},
 			jumpBannerDetail() {
 				uni.navigateTo({
-					url: '/pages/FirstView/HomeNewsList'
+					url: '/pages/FirstView/HomeBannerNewsList'
 				})
 				 
 			},
@@ -279,9 +292,9 @@
 					this.filterList = false
 				}
 			},
-			tagclick(symbol) {
+			jumpmydetailpage(item) {
 				uni.navigateTo({
-					url: '/pages/SecView/lineDetail?item=' + encodeURIComponent(JSON.stringify(symbol))
+					url: '/pages/SecView/lineDetail?item=' + encodeURIComponent(JSON.stringify(item))
 				})
 			},
 			jumpDetail(item) {
