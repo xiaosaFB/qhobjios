@@ -231,7 +231,7 @@
 		props: {
 		  myfirstzx: {
 		    type: Array,
-		    default: []
+		    default:()=> []
 		  }
 		},
 		onReady() {
