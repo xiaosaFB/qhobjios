@@ -94,46 +94,26 @@
 		onLoad: function(option) {
 			let that = this
 			this.item = JSON.parse(option.item)
-			console.log('this.item',this.item)
-			// if (this.item.length == 5) {
-			// 	this.name = this.item.name
-			// 	this.jiage = this.item[1]
-			// 	this.zhangdiefu = this.item[2]
-			// } else {
-				this.name = this.item.name
-				this.jiage = this.item.jiage
-				this.zhangdiefu = this.item.zhangfu
-			// } 
+			this.name = this.item.name
+			this.jiage = this.item.jiage
+			this.zhangdiefu = this.item.zhangfu
 			if (uni.getStorageSync('ListHQZHIXUANDATA_key')) {
 				var list = JSON.parse(uni.getStorageSync('ListHQZHIXUANDATA_key'));
 				// 判断是否已经加入了自选
 				if (this.showself == 1) {
 					list.forEach((item,index) => {
-						// console.log(item,index)
-						// if (that.item.length == 5) {
-						// 	 if (item.name == this.name) {
-						// 	 	that.buttonstatus = 2
-						// 	 	uni.showToast({
-						// 	 	  icon: 'none',
-						// 	 	  title: '当前已经在自选中'
-						// 	 	});
-						// 	 }
-						// } else {
-							if (item.name == this.name) {
-								that.buttonstatus = 2
-								uni.showToast({
-								  icon: 'none',
-								  title: '当前已经在自选中'
-								});
-							}
-						// } 
+						if (item.name == this.name) {
+							that.buttonstatus = 2
+							uni.showToast({
+							  icon: 'none',
+							  title: '已经在自选中'
+							});
+						}
 					}) 
 				}
 			}
 		},
 		mounted() {
-			// this.mychart= echarts.init(document.getElementById('mainechart'))
-			// this.echartsData()
 			setTimeout(() => {
 				this.chartsDataCandle1=JSON.parse(JSON.stringify(homedemodata.Candle))
 			}, 1500);
@@ -152,7 +132,6 @@
 						});
 					} else {
 						list.forEach((item,index) => {
-							
 							if (item.name == that.item.name) {
 								list.splice(index,1)
 								that.buttonstatus = 1
