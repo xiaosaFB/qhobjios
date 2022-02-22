@@ -2,7 +2,8 @@
 	<view class="AbstractToolbar">
 		<view class="ThePageContent" v-if="optimizeLoadingSpeed">
 			<u-navbar bgColor="#FFFFFF" v-if="bottomButtonSelection===3" :titleStyle="{color: '#000'}"
-				:title="arrayBottomButtonSelection[bottomButtonSelection]" :placeholder="true" leftIcon="" :border="true"></u-navbar>
+				:title="arrayBottomButtonSelection[bottomButtonSelection]" :placeholder="true" leftIcon=""
+				:border="true"></u-navbar>
 			<view class="u-page">
 				<div class="mainBackground-DS-EntryPoint1-1"></div>
 				<first-view v-if="bottomButtonSelection==0" :myfirstzx="myzx"></first-view>
@@ -10,21 +11,25 @@
 				<thr-view v-if="bottomButtonSelection==2"></thr-view>
 				<mine-view v-if="bottomButtonSelection==3"></mine-view>
 			</view>
-			<u-tabbar :value="bottomButtonSelection" @change="fnBottomButtonSelection" activeColor="#1B3054" inactiveColor="#D3DCED"
-				:fixed="true" :placeholder="true" :border="true" :safeAreaInsetBottom="true">
-				<u-tabbar-item style="background-color: #FFFFFF;" :text="arrayBottomButtonSelection[0]" @click="getBottomButtonSelection">
+			<u-tabbar :value="bottomButtonSelection" @change="fnBottomButtonSelection" activeColor="#1B3054"
+				inactiveColor="#D3DCED" :fixed="true" :placeholder="true" :border="true" :safeAreaInsetBottom="true">
+				<u-tabbar-item style="background-color: #FFFFFF;" :text="arrayBottomButtonSelection[0]"
+					@click="getBottomButtonSelection">
 					<image class="IControllerButton-icon" slot="active-icon" src="/static/tabbar/sy_sel.png"></image>
 					<image class="IControllerButton-icon" slot="inactive-icon" src="/static/tabbar/sy.png"></image>
 				</u-tabbar-item>
-				<u-tabbar-item style="background-color: #FFFFFF;" :text="arrayBottomButtonSelection[1]" @click="getBottomButtonSelection">
+				<u-tabbar-item style="background-color: #FFFFFF;" :text="arrayBottomButtonSelection[1]"
+					@click="getBottomButtonSelection">
 					<image class="IControllerButton-icon" slot="active-icon" src="/static/tabbar/hq_sel.png"></image>
 					<image class="IControllerButton-icon" slot="inactive-icon" src="/static/tabbar/hq.png"></image>
 				</u-tabbar-item>
-				<u-tabbar-item style="background-color: #FFFFFF;" :text="arrayBottomButtonSelection[2]" @click="getBottomButtonSelection">
+				<u-tabbar-item style="background-color: #FFFFFF;" :text="arrayBottomButtonSelection[2]"
+					@click="getBottomButtonSelection">
 					<image class="IControllerButton-icon" slot="active-icon" src="/static/tabbar/news_sel.png"></image>
 					<image class="IControllerButton-icon" slot="inactive-icon" src="/static/tabbar/news.png"></image>
 				</u-tabbar-item>
-				<u-tabbar-item style="background-color: #FFFFFF;" :text="arrayBottomButtonSelection[3]" @click="getBottomButtonSelection">
+				<u-tabbar-item style="background-color: #FFFFFF;" :text="arrayBottomButtonSelection[3]"
+					@click="getBottomButtonSelection">
 					<image class="IControllerButton-icon" slot="active-icon" src="/static/tabbar/self_sel.png"></image>
 					<image class="IControllerButton-icon" slot="inactive-icon" src="/static/tabbar/self.png"></image>
 				</u-tabbar-item>
@@ -46,9 +51,9 @@
 	import Utils from "@/api/utils.js"
 	import ResourceToLoad from '@/api/ResourceToLoad.js'
 	import HomePageData from "@/api/HomePageCodeDataEnum.js"
-	
-	import { 
-		ZiXuanData 
+
+	import {
+		ZiXuanData
 	} from '@/api/homePageDataTop.js'
 	import FirstView from '@/pages/FirstView/firstview.vue'
 	import SecView from '@/pages/SecView/secview.vue'
@@ -72,19 +77,16 @@
 			MineView
 		},
 		onLoad(open) {
-			console.log('33333')
-			uni.setStorageSync('ListHQZHIXUANDATA_key',JSON.stringify(this.selfZxuan))
+			uni.setStorageSync('ListHQZHIXUANDATA_key', JSON.stringify(this.selfZxuan))
 			this.fnRsrcToLoad()
 			this.bottomButtonSelection = open.index || 0
 		},
-		created() {
-			
-		},
+		created() {},
 		onReady() {
-			
+
 		},
 		onShow() {
-			this.myzx =  JSON.parse(uni.getStorageSync('ListHQZHIXUANDATA_key'))
+			this.myzx = JSON.parse(uni.getStorageSync('ListHQZHIXUANDATA_key'))
 		},
 		methods: {
 			fnBrokenNetworkReconnection() {
@@ -102,8 +104,8 @@
 				// 			uni.showTabBar()
 				// 		}
 				// 	} else {
-						that.optimizeLoadingSpeed = true
-						uni.showTabBar()
+				that.optimizeLoadingSpeed = true
+				uni.showTabBar()
 				// 	}
 				// 	}),((err)=> {
 				// 		uni.hideTabBar() 
@@ -114,7 +116,7 @@
 			},
 			fnResourceToLoad(value, res) {
 				uni.hideTabBar()
-				this.optimizeLoadingSpeed = false 
+				this.optimizeLoadingSpeed = false
 			},
 			getBottomButtonSelection(e) {},
 			fnBottomButtonSelection(e) {
@@ -128,9 +130,11 @@
 	.AbstractToolbar {
 		width: 100%;
 	}
+
 	.ThePageContent {
 		height: var(--status-bar-height);
 	}
+
 	.IControllerButton-icon {
 		width: 25px;
 		height: 25px;
@@ -142,6 +146,7 @@
 		justify-content: center;
 		color: black;
 	}
+
 	.mainBackground-DS-EntryPoint1-1 {
 		position: absolute;
 		width: 100%;
