@@ -26,7 +26,7 @@
 				<text @click="">清除缓存</text>
 				<text class="businessListYou">{{numwithcachestr}}</text>
 			</view>
-			<view class="login-card-loginIn">
+			<view class="login-card-loginIn" v-if="loginState == 1">
 			  <view class="login-card-loginIn-btn" @click="AbstractLogOut">
 			    退出登录
 			  </view>

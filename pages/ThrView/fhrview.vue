@@ -1,47 +1,50 @@
 <!-- 资讯 -->
 <template>
-	<view class="zx">
-		<!-- <u-back-top :scroll-top="scrollTop"></u-back-top> -->
-		<u-icon @click="kefu()" class="btn-kf" name="server-fill" color="#2979ff" size="18" label="在线客服" labelSize="13">
-		</u-icon>
-		<u-icon class="btn-zixun" name="file-text-fill" color="#0078D4" :bold="true" size="28" label="资讯"
-			labelSize="18">
-		</u-icon>
-		<u-modal :show="showKf" :closeOnClickOverlay="true" @confirm="showKf = false" :content='"客服功能还在开发中，敬请期待~"'>
-		</u-modal>
-		<div class="topContainer-DS-EntryPoint1-1 ">
-			<div class="filterContainerCommon-DS-EntryPoint1-1 filterContainer-DS-EntryPoint1-1"></div>
-		</div>
-		<div class="listContent-DS-EntryPoint1-1">
-			<u-skeleton rows="2" :loading="loadingSkeleton" avatar :avatarSize="50" avatarShape="square">
-				<div class="river-DS-EntryPoint1-1 river-rc riverAutoPagination-DS-EntryPoint1-1">
-					<div class="riverSections-DS-EntryPoint1-1">
-						<div class="cardWrapper-DS-card1-1" v-for="(item, index) in newsListData" :key="index">
-							<div class="contentCard-DS-card1-1 feedsContentCard-DS-card1-1">
-								<div class="contentCard_body-DS-card1-1">
-									<div class="contentCard_info-DS-card1-1">
-										<div class="contentCard_attribution-DS-card1-1"><img
-												class="provider_logo-DS-card1-1" :src="item.icon">
-											<p class="contentCard_attribution_text-DS-card1-1"><span
-													class="provider_name-DS-card1-1">{{item.source}}</span><span
-													class="provider_name-DS-card1-1"
-													style="padding-left:5px ;padding-right:5px ;">&nbsp;·&nbsp;</span><span
-													class="provider_name-DS-card1-1">{{item.interval}}</span><span
-													class="label-DS-card1-1">{{item.type}}</span></p>
-										</div><a class="contentCard_title-DS-card1-1" @click="jumpHotnewsdetail(item)">
-											<h3>{{item.title}}</h3>
-										</a>
-									</div><span class="thumbnail-DS-card1-1"><img :src="item.thumb"></span>
+	<view class="status_bar">
+		<view class="zx">
+			<!-- <u-back-top :scroll-top="scrollTop"></u-back-top> -->
+			<u-icon @click="kefu()" class="btn-kf" name="server-fill" color="#2979ff" size="18" label="客服" labelSize="13">
+			</u-icon>
+			<u-icon class="btn-zixun" name="file-text-fill" color="#0078D4" :bold="true" size="28" label="资讯"
+				labelSize="18">
+			</u-icon>
+			<u-modal :show="showKf" :closeOnClickOverlay="true" @confirm="showKf = false" :content='"客服功能还在开发中，敬请期待~"'>
+			</u-modal>
+			<div class="topContainer-DS-EntryPoint1-1 ">
+				<div class="filterContainerCommon-DS-EntryPoint1-1 filterContainer-DS-EntryPoint1-1"></div>
+			</div>
+			<div class="listContent-DS-EntryPoint1-1">
+				<u-skeleton rows="2" :loading="loadingSkeleton" avatar :avatarSize="50" avatarShape="square">
+					<div class="river-DS-EntryPoint1-1 river-rc riverAutoPagination-DS-EntryPoint1-1">
+						<div class="riverSections-DS-EntryPoint1-1">
+							<div class="cardWrapper-DS-card1-1" v-for="(item, index) in newsListData" :key="index">
+								<div class="contentCard-DS-card1-1 feedsContentCard-DS-card1-1">
+									<div class="contentCard_body-DS-card1-1">
+										<div class="contentCard_info-DS-card1-1">
+											<div class="contentCard_attribution-DS-card1-1"><img
+													class="provider_logo-DS-card1-1" :src="item.icon">
+												<p class="contentCard_attribution_text-DS-card1-1"><span
+														class="provider_name-DS-card1-1">{{item.source}}</span><span
+														class="provider_name-DS-card1-1"
+														style="padding-left:5px ;padding-right:5px ;">&nbsp;·&nbsp;</span><span
+														class="provider_name-DS-card1-1">{{item.interval}}</span><span
+														class="label-DS-card1-1">{{item.type}}</span></p>
+											</div><a class="contentCard_title-DS-card1-1" @click="jumpHotnewsdetail(item)">
+												<h3>{{item.title}}</h3>
+											</a>
+										</div><span class="thumbnail-DS-card1-1"><img :src="item.thumb"></span>
+									</div>
+									<u-rate :count="1" :value="index%2===0?1:0" activeIcon="heart-fill"
+										inactiveIcon="heart"></u-rate>
 								</div>
-								<u-rate :count="1" :value="index%2===0?1:0" activeIcon="heart-fill"
-									inactiveIcon="heart"></u-rate>
 							</div>
 						</div>
 					</div>
-				</div>
-			</u-skeleton>
-		</div>
+				</u-skeleton>
+			</div>
+		</view>
 	</view>
+	
 </template>
 
 <script>
@@ -93,12 +96,16 @@
 </script>
 
 <style lang="scss" scoped>
+	.status_bar {
+		height: var(--status-bar-height);
+		width: 100%;
+	}
 	.zx {
 		position: relative;
 		background: #FFF;
 		box-shadow: 0px 0px 0.8px rgba(0, 0, 0, 0.13), 0px 2px 10px rgba(0, 0, 0, 0.08);
 		border-radius: 6px;
-		top: 16px;
+		top: var(--status-bar-height);
 		margin: 0 8px 0 8px;
 		padding: 16px 0px 0px 0;
 		content-visibility: auto;

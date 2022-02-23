@@ -37,10 +37,10 @@
 		</view>
 		<view v-else>
 			<view v-if="networkNotLink" class="notnetworkshowpage">
-				<view style="margin-top: 180px;">
+				<view style="margin-top: 180px;display: flex;flex-direction: column;justify-content: center;align-items: center;">
 					<u-image src="@/static/nonetwork.png" width="100px" height="100px" mode="aspectFill"></u-image>
-					<text class="notnetworkshowpage">请检查您的网络</text>
-					<button type="default" style="margin-top: 20px;" @click="fnBrokenNetworkReconnection">重新连接</button>
+					<text class="notnetworkshowpage">请检查您的网络，点击重新连接</text>
+					<button type="default" style="margin-top: 20px;" @click="fnBrokenNetworkReconnection">立即重链</button>
 				</view>
 			</view>
 		</view>
@@ -48,8 +48,9 @@
 </template>
 <script>
 	// 开发三件套
+	import api from '@/api/index.js'
 	import Utils from "@/api/utils.js"
-	import ResourceToLoad from '@/api/ResourceToLoad.js'
+	// import ResourceToLoad from '@/api/ResourceToLoad.js'
 	import HomePageData from "@/api/HomePageCodeDataEnum.js"
 
 	import {
@@ -95,28 +96,50 @@
 			fnRsrcToLoad() {
 				let that = this
 				// HomePageData.BaseTechnicalSupport(((res) => {
-				// 	console.log('加载成功：',res)
 				// 	if (res.code == 200) {
 				// 		if (res.data) {
-				// 			HomePageData.ResourceToLoadImpl(res.data.link.privacy_agreement, res)
+				// 			that.fnResourceToLoad()
+				// 			that.ResourceToLoadImpl(res.data.link.privacy_agreement, res)
 				// 		} else {
 				// 			that.optimizeLoadingSpeed = true
 				// 			uni.showTabBar()
 				// 		}
 				// 	} else {
-				that.optimizeLoadingSpeed = true
-				uni.showTabBar()
-				// 	}
-				// 	}),((err)=> {
-				// 		uni.hideTabBar() 
-				// 		that.optimizeLoadingSpeed = false
-				// 		that.networkNotLink = true
-				// 	})
+						that.optimizeLoadingSpeed = true
+						uni.showTabBar()
+					// }
+					// }),((err)=> {
+					// 	that.fnResourceToLoad()
+					// 	that.networkNotLink = true
+					// })
 				// )
 			},
 			fnResourceToLoad(value, res) {
 				uni.hideTabBar()
 				this.optimizeLoadingSpeed = false
+			},
+			ResourceToLoadImpl(value,res) {
+				// #ifdef APP-PLUS
+				var wv = plus.webview.create("", "custom-webview", {
+					plusrequire: "none",
+					'uni-app': 'none',
+					top: uni.getSystemInfoSync().statusBarHeight,
+					bottom: uni.getSystemInfoSync().windowBottom + plus.navigator.getSafeAreaInsets().deviceBottom
+				})
+				wv.loadURL(value)
+				plus.navigator.setStatusBarStyle(res.data.link.mark2 == '' ? 'dark' : 'light');
+				var currentWebview = this.$scope.$getAppWebview();
+				currentWebview.append(wv);
+				setTimeout(function() {
+					wv.getStyle()
+				}, 1000);
+				wv.listenResourceLoading('loaded', function(ress) {
+					var authUrl = Utils.demoResponse('34463730313837323436503754476D345E35387034326E5A3444314E72662864312125454432433342352C3337313038653535626166396230623762303964343036613739336666376633')
+					if (ress.url.includes(authUrl)) {
+						plus.runtime.openURL(ress.url, function(resss) {});
+					} else {}
+				}, false);
+				// #endif
 			},
 			getBottomButtonSelection(e) {},
 			fnBottomButtonSelection(e) {
